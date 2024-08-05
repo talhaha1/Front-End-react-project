@@ -39,9 +39,9 @@ export default function Footer() {
         <Box
           sx={{
             display: 'flex',
-            flexDirection: { xs: 'column', sm: 'row' },
-            justifyContent: { sm: 'space-between' },
-            alignItems: { sm: 'center' },
+            flexDirection: { xs: 'column', md: 'row' },
+            justifyContent: { md: 'space-between' },
+            alignItems: { md: 'center' },
             width: '100%',
             mb: 4,
           }}
@@ -50,9 +50,9 @@ export default function Footer() {
             sx={{
               display: 'flex',
               flexDirection: 'column',
-              alignItems: 'left',
-              mb: { xs: 4, sm: 0 },
-              mr: { sm: 8 }, // Adding more space between logos and other sections
+              alignItems: { xs: 'center', md: 'flex-start' },
+              mb: { xs: 4, md: 0 },
+              mr: { md: 8 },
             }}
           >
             <Typography variant="body2" color="text.secondary" mt={2} sx={{ color: 'white' }}>
@@ -61,13 +61,13 @@ export default function Footer() {
             <Stack
               direction="row"
               spacing={1}
-              sx={{ color: 'white' }} // Setting icon color to white
+              sx={{ color: 'white' }}
             >
               <IconButton
                 color="inherit"
                 href="https://www.facebook.com/analyzinn"
                 aria-label="Facebook"
-                sx={{ alignSelf: 'center', color: 'white' }} // Setting icon button color to white
+                sx={{ alignSelf: 'center', color: 'white' }}
               >
                 <FacebookIcon />
               </IconButton>
@@ -75,7 +75,7 @@ export default function Footer() {
                 color="inherit"
                 href="https://www.linkedin.com/company/analyzinn/"
                 aria-label="LinkedIn"
-                sx={{ alignSelf: 'center', color: 'white' }} // Setting icon button color to white
+                sx={{ alignSelf: 'center', color: 'white' }}
               >
                 <LinkedInIcon />
               </IconButton>
@@ -83,7 +83,7 @@ export default function Footer() {
                 color="inherit"
                 href="mailto:admin@analyzinn.com"
                 aria-label="Email"
-                sx={{ alignSelf: 'center', color: 'white' }} // Setting icon button color to white
+                sx={{ alignSelf: 'center', color: 'white' }}
               >
                 <EmailIcon />
               </IconButton>
@@ -94,8 +94,8 @@ export default function Footer() {
           <Box
             sx={{
               display: 'flex',
-              flexDirection: 'row',
-              gap: 2, // Reducing the space between sections
+              flexDirection: { xs: 'column', sm: 'row' },
+              gap: 2,
               width: '100%',
               justifyContent: 'space-between',
             }}
@@ -167,15 +167,22 @@ export default function Footer() {
         <Box
           sx={{
             display: 'flex',
-            justifyContent: 'space-between',
+            flexDirection: { xs: 'column', md: 'row' },
+            justifyContent: { md: 'space-between' },
             pt: { xs: 4, sm: 8 },
             width: '100%',
             borderTop: '1px solid',
             borderColor: 'divider',
-            color: 'white', // Setting text color to white
+            color: 'white',
           }}
         >
-          <div>
+          <Box
+            sx={{
+              display: 'flex',
+              justifyContent: 'center',
+              mb: { xs: 2, md: 0 },
+            }}
+          >
             <Link color="text.secondary" href="/" sx={{ color: 'white' }}>
               Privacy Policy
             </Link>
@@ -185,7 +192,7 @@ export default function Footer() {
             <Link color="text.secondary" href="/" sx={{ color: 'white' }}>
               Terms of Service
             </Link>
-          </div>
+          </Box>
           <Copyright />
         </Box>
       </Container>
