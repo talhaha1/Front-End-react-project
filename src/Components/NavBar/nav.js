@@ -5,7 +5,7 @@ import logo from './logo.png';
 import './nav.css';
 
 const Nav = () => {
-  const [anchorEl, setAnchorEl] = useState(null);
+  const [anchorEl, setAnchorEl] = useState(null);    //manage the anchor element for the mobile menu.
   const [dropdownVisible, setDropdownVisible] = useState(false);
 
   const handleMenuOpen = (event) => {
