@@ -1,4 +1,4 @@
-// Footer.js
+
 import React from 'react';
 import IconButton from '@mui/material/IconButton';
 import FacebookIcon from '@mui/icons-material/Facebook';
@@ -39,18 +39,21 @@ export default function Footer() {
               <IconButton
                 href="https://www.facebook.com/analyzinn"
                 aria-label="Facebook"
+                sx={{ color: 'white' }}
               >
                 <FacebookIcon />
               </IconButton>
               <IconButton
                 href="https://www.linkedin.com/company/analyzinn/"
                 aria-label="LinkedIn"
+                sx={{ color: 'white' }}
               >
                 <LinkedInIcon />
               </IconButton>
               <IconButton
                 href="mailto:admin@analyzinn.com"
                 aria-label="Email"
+                sx={{ color: 'white' }}
               >
                 <EmailIcon />
               </IconButton>

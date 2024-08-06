@@ -1,4 +1,3 @@
-// FooterStyles.js
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
@@ -9,25 +8,22 @@ export const FooterBox = styled(Box)(({ theme }) => ({
   width: '100%',
   backgroundColor: 'black',
   color: 'white',
-  paddingY: theme.spacing(8, 10),
+  padding: theme.spacing(8, 2),
 }));
 
 export const FooterContainer = styled(Container)({
   display: 'flex',
   flexDirection: 'column',
-  alignItems: 'center',
-  maxWidth: '800px', // Adjust the maxWidth as needed
+  maxWidth: '1000px', // Adjust the maxWidth as needed
   margin: '0 auto', // Center the container horizontally
 });
 
 export const TopSection = styled(Box)(({ theme }) => ({
   display: 'flex',
   flexDirection: 'column',
-  alignItems: 'center',
   [theme.breakpoints.up('md')]: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    alignItems: 'center',
   },
   width: '100%',
   marginBottom: theme.spacing(4),
@@ -36,11 +32,8 @@ export const TopSection = styled(Box)(({ theme }) => ({
 export const InfoSection = styled(Box)(({ theme }) => ({
   display: 'flex',
   flexDirection: 'column',
-  alignItems: 'center',
   marginBottom: theme.spacing(4),
   [theme.breakpoints.up('md')]: {
-    flexDirection: 'row',
-    marginRight: theme.spacing(8),
     marginBottom: 0,
   },
 }));
@@ -50,9 +43,9 @@ export const InfoSections = styled(Box)(({ theme }) => ({
   flexDirection: 'column',
   gap: theme.spacing(2),
   width: '100%',
-  justifyContent: 'space-between',
-  [theme.breakpoints.up('sm')]: {
+  [theme.breakpoints.up('md')]: {
     flexDirection: 'row',
+    justifyContent: 'space-between',
   },
 }));
 
@@ -66,7 +59,7 @@ export const FooterBottom = styled(Box)(({ theme }) => ({
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'space-between',
-  paddingTop: theme.spacing(4, 8),
+  paddingTop: theme.spacing(4),
   width: '100%',
   borderTop: '1px solid',
   borderColor: 'divider',
