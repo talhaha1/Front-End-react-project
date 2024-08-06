@@ -1,6 +1,6 @@
-
 import React from 'react';
 import IconButton from '@mui/material/IconButton';
+import Box from '@mui/material/Box';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
@@ -35,7 +35,7 @@ export default function Footer() {
             <FooterTypography variant="body2" mt={2}>
               Guaranteed Satisfaction. Everytime!
             </FooterTypography>
-            <div>
+            <Box sx={{ mt: 2 }}>
               <IconButton
                 href="https://www.facebook.com/analyzinn"
                 aria-label="Facebook"
@@ -57,7 +57,7 @@ export default function Footer() {
               >
                 <EmailIcon />
               </IconButton>
-            </div>
+            </Box>
           </InfoSection>
 
           <InfoSections>
@@ -75,8 +75,8 @@ export default function Footer() {
                 Company
               </FooterTypography>
               <FooterLink href="./AboutUs">About</FooterLink>
-              <FooterLink href="#">Career</FooterLink>
-              <FooterLink href="/feedback">Contact Us</FooterLink>
+              <FooterLink href="https://www.linkedin.com/company/analyzinn/">Career</FooterLink>
+              <FooterLink href="/Contact">Contact Us</FooterLink>
             </SectionBox>
 
             <SectionBox>

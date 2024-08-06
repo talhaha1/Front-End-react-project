@@ -26,7 +26,7 @@ export const TopSection = styled(Box)(({ theme }) => ({
     justifyContent: 'space-between',
   },
   width: '100%',
-  marginBottom: theme.spacing(4),
+  marginBottom: theme.spacing(2), // Increased spacing between logos and services
 }));
 
 export const InfoSection = styled(Box)(({ theme }) => ({
@@ -46,6 +46,7 @@ export const InfoSections = styled(Box)(({ theme }) => ({
   [theme.breakpoints.up('md')]: {
     flexDirection: 'row',
     justifyContent: 'space-between',
+    alignItems: 'center', // Align services, company, and address on the same level as logos
   },
 }));
 
@@ -59,7 +60,7 @@ export const FooterBottom = styled(Box)(({ theme }) => ({
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'space-between',
-  paddingTop: theme.spacing(4),
+  paddingTop: theme.spacing(4), // Increased spacing between footer links and footer typography
   width: '100%',
   borderTop: '1px solid',
   borderColor: 'divider',
