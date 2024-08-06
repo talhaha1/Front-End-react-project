@@ -1,7 +1,7 @@
 // src/App.js
 
 import React from 'react';
-import OurServices from './Components/OurServics/OurServics';
+import OurServices from './Components/OurServices/OurServices';
 
 function App() {
   return (

@@ -1,7 +1,6 @@
-// src/Components/OurServices/OurServices.js
-
-import React, { useState } from "react";
-import { Box, Tab, Tabs } from "@mui/material";
+import React, { useState, useEffect } from "react";
+import { Box, Tab, Tabs, useMediaQuery, useTheme } from "@mui/material";
+import SwipeableViews from "react-swipeable-views";
 import ServiceCard from "./ServiceCard";
 import img1 from "../../assets/OurServices/img1.jpg";
 import img2 from "../../assets/OurServices/img2.jpg";
@@ -31,32 +30,55 @@ const imageDetails = [
 
 const OurServices = () => {
   const [selectedTab, setSelectedTab] = useState(0);
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   const handleChange = (event, newValue) => {
     setSelectedTab(newValue);
   };
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setSelectedTab((prev) => (prev + 1) % imageDetails.length);
+    }, 2000); // change tab every 5 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <Box css={rootStyle}>
-      <Tabs
-        value={selectedTab}
-        onChange={handleChange}
-        centered
-        indicatorColor="primary"
-        textColor="primary"
-        css={tabsStyle}
+      <Box css={tabsStyle}>
+        <Tabs
+          value={selectedTab}
+          onChange={handleChange}
+          centered={!isMobile}
+          variant={isMobile ? "scrollable" : "standard"}
+          scrollButtons="auto"
+          indicatorColor="primary"
+          textColor="primary"
+        >
+          {imageDetails.map((detail, index) => (
+            <Tab key={index} label={detail.label} />
+          ))}
+        </Tabs>
+      </Box>
+      <SwipeableViews
+        index={selectedTab}
+        onChangeIndex={(index) => setSelectedTab(index)}
+        enableMouseEvents
+        animateTransitions={true} // Enable smooth transitions
+        springConfig={{ duration: 300, ease: 'easeInOut' }} // Adjust timing and easing
+        css={serviceCardStyle}
       >
         {imageDetails.map((detail, index) => (
-          <Tab key={index} label={detail.label} />
+          <ServiceCard
+            key={index}
+            image={detail.image}
+            heading={detail.heading}
+            text={detail.text}
+          />
         ))}
-      </Tabs>
-      <Box css={serviceCardStyle}>
-        <ServiceCard
-          image={imageDetails[selectedTab].image}
-          heading={imageDetails[selectedTab].heading}
-          text={imageDetails[selectedTab].text}
-        />
-      </Box>
+      </SwipeableViews>
     </Box>
   );
 };
