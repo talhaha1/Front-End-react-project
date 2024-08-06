@@ -4,6 +4,8 @@ import Box from '@mui/material/Box';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
+import './responsive.css';
+
 import {
   FooterBox,
   FooterContainer,
@@ -35,25 +37,25 @@ export default function Footer() {
             <FooterTypography variant="body2" mt={2}>
               Guaranteed Satisfaction. Everytime!
             </FooterTypography>
-            <Box sx={{ mt: 2 }}>
+            <Box className="icon-box">
               <IconButton
                 href="https://www.facebook.com/analyzinn"
                 aria-label="Facebook"
-                sx={{ color: 'white' }}
+                className="icon-button"
               >
                 <FacebookIcon />
               </IconButton>
               <IconButton
                 href="https://www.linkedin.com/company/analyzinn/"
                 aria-label="LinkedIn"
-                sx={{ color: 'white' }}
+                className="icon-button"
               >
                 <LinkedInIcon />
               </IconButton>
               <IconButton
                 href="mailto:admin@analyzinn.com"
                 aria-label="Email"
-                sx={{ color: 'white' }}
+                className="icon-button"
               >
                 <EmailIcon />
               </IconButton>

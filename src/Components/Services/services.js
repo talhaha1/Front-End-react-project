@@ -1,5 +1,6 @@
 import React from 'react';
 import image1 from '../../assests/backgroundDM.jpg';
+import image2 from '../../assests/1.jpg';
 import './services.css';
 import './responsive.css';
 import { Typography, Box } from '@mui/material';
@@ -9,7 +10,7 @@ const Services = () => {
         <header>
             <Box className="head-text">
                 <Box className="head-image">
-                    <img src={image1} alt="Services" />
+                    <img src={image2} alt="Services" />
                 </Box>
                 <Box className="text-on-image">
                     <Typography variant="subtitle1" className="subtitle">
