@@ -40,7 +40,7 @@ const OurServices = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setSelectedTab((prev) => (prev + 1) % imageDetails.length);
-    }, 2000); // change tab every 5 seconds
+    }, 5000); // change tab every 5 seconds
 
     return () => clearInterval(interval);
   }, []);
@@ -54,11 +54,25 @@ const OurServices = () => {
           centered={!isMobile}
           variant={isMobile ? "scrollable" : "standard"}
           scrollButtons="auto"
-          indicatorColor="primary"
-          textColor="primary"
+          sx={{
+            backgroundColor: '#000000', // Black background for tabs
+            color: '#FFFFFF', // White text color for tabs
+            '.MuiTabs-indicator': {
+              backgroundColor: '#FFFFFF', // White indicator color
+            },
+          }}
         >
           {imageDetails.map((detail, index) => (
-            <Tab key={index} label={detail.label} />
+            <Tab 
+              key={index} 
+              label={detail.label} 
+              sx={{
+                color: '#FFFFFF', // White text color for each tab
+                '&.Mui-selected': {
+                  color: '#FFFFFF', // White text color for selected tab
+                },
+              }}
+            />
           ))}
         </Tabs>
       </Box>
