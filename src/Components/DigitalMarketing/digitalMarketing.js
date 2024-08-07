@@ -1,11 +1,48 @@
 import React from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import './digitalMarketing.css';
+import { NextArrow, PrevArrow } from './CustomArrow';
 import seo from '../../assests/seo.jpg';
 import email from '../../assests/Email-Marketing.jpg';
 import web from '../../assests/webDesign.png';
 import content from '../../assests/contentWriting.jpg';
 
 const DigitalMarketing = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
   return (
     <div className="digital-marketing-container">
       <div className="services-section">
@@ -22,24 +59,24 @@ const DigitalMarketing = () => {
         </ul>
       </div>
       <div className="image-section">
-        <div className="center-image-container">
-          <img src={content} alt="Content Writing" className="center-image" />
-          <p>Content Writing</p>
-        </div>
-        <div className="bottom-images">
-          <div className="bottom-image">
+        <Slider {...settings}>
+          <div className="slide-item">
+            <img src={content} alt="Content Writing" />
+            <p>Content Writing</p>
+          </div>
+          <div className="slide-item">
             <img src={seo} alt="SEO (Search Engine Optimization)" />
             <p>SEO (Search Engine Optimization)</p>
           </div>
-          <div className="bottom-image">
+          <div className="slide-item">
             <img src={email} alt="Email Marketing" />
             <p>Email Marketing</p>
           </div>
-          <div className="bottom-image">
+          <div className="slide-item">
             <img src={web} alt="Website/Logo Design, Landing Pages" />
             <p>Website/Logo Design, Landing Pages</p>
           </div>
-        </div>
+        </Slider>
       </div>
       <div className="services-section">
         <h3 className="services-title">How can you access our Digital Marketing Strategies?</h3>
