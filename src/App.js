@@ -1,5 +1,5 @@
 import NavBar from "./Components/NavBar/nav";
-import Footer from "./Components/Footer/Footer";
+import Footer from "./Components/Footer/footer";
 import DigitalMarketing from "./Components/DigitalMarketing/digitalMarketing";
 import UniqueFeatures from "./Components/WhyChooseUs/UniqueFeatures";
 
