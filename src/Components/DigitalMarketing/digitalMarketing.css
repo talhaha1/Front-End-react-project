@@ -1,0 +1,157 @@
+.services-section {
+    background-color: #2a2b72; /* Background color */
+    color: #d4d4d4; /* Text color */
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .services-title {
+    font-size: 2rem;
+    margin-bottom: 5px;
+  }
+  
+  .services-intro {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #d4d4d4;
+  }
+  
+  .services-list {
+    list-style-type: disc;
+    padding-left: 40px;
+    text-align: left;
+    margin: 0 auto;
+  }
+
+  .services-lists {
+    list-style-type: disc;
+    padding-left: 250px;
+    text-align: left;
+  }
+  
+  .services-list li {
+    font-size: 1.1rem;
+    margin: 10px 0;
+  }
+
+  .image-section {
+    background-color: #2a2b72; 
+    padding: 20px 0;
+  }
+  
+  .grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .grid-item {
+    margin: 10px;
+    text-align: center;
+    flex-basis: 200px;
+    color: #ffffff; 
+  }
+  
+  .grid-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .grid-item p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  
+  .center-image-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .center-image {
+    width: 50%;
+    max-width: 250px;
+  }
+  
+  .center-image-container p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .bottom-images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .bottom-image {
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .bottom-image img {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
+  }
+  
+  .bottom-image p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff; /* Set text color to white */
+  }
+  
+  /* Responsive design */
+  @media (max-width: 600px) {
+    .services-title {
+      font-size: 2rem;
+    }
+    .services-intro {
+      font-size: 1rem;
+    }
+    .services-list li {
+      font-size: 1rem;
+    }
+    .grid-item {
+      flex-basis: 100%;
+    }
+  }
+  
+  @media (min-width: 600px) and (max-width: 900px) {
+    .services-title {
+      font-size: 2.5rem;
+    }
+    .services-intro {
+      font-size: 1.1rem;
+    }
+    .services-list li {
+      font-size: 1rem;
+    }
+    .grid-item {
+      flex-basis: 45%;
+    }
+  }
+  
+  @media (min-width: 900px) and (max-width: 1200px) {
+    .services-title {
+      font-size: 3rem;
+    }
+    .services-intro {
+      font-size: 1.2rem;
+    }
+    .services-list li {
+      font-size: 1.1rem;
+    }
+    .grid-item {
+      flex-basis: 30%;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .grid-item {
+      flex-basis: 22%;
+    }
+  }
+  

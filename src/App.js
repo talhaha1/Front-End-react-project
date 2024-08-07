@@ -1,3 +1,7 @@
+import NavBar from './Components/NavBar/nav'
+import Footer from './Components/Footer/footer'
+import Services from './Components/Services/services'
+import DigitalMarketing from './Components/DigitalMarketing/digitalMarketing';
 
 // src/App.js
 
@@ -14,6 +18,10 @@ import Testimonials from "./Components/Testimonials/Testimonials"
 function App() {
   return (
     <div className="App">
+      <NavBar/>
+      <Services/>
+      <DigitalMarketing/>
+      <Footer/>
 
 
       <Header />
