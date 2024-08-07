@@ -1,6 +1,5 @@
 import React from 'react';
-import image1 from '../../assests/backgroundDM.jpg';
-import image2 from '../../assests/1.jpg';
+import image2 from '../../assests/dm.png';
 import './services.css';
 import './responsive.css';
 import { Typography, Box } from '@mui/material';
