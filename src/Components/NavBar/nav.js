@@ -3,9 +3,10 @@ import { AppBar, Toolbar, Grid, IconButton, Menu, MenuItem } from '@mui/material
 import MenuIcon from '@mui/icons-material/Menu';
 import logo from './logo.png';
 import './nav.css';
+import './responsive.css';
 
 const Nav = () => {
-  const [anchorEl, setAnchorEl] = useState(null);    //manage the anchor element for the mobile menu.
+  const [anchorEl, setAnchorEl] = useState(null);
   const [dropdownVisible, setDropdownVisible] = useState(false);
 
   const handleMenuOpen = (event) => {

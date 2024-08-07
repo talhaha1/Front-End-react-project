@@ -1,0 +1,67 @@
+/* Responsive styles */
+@media (max-width: 600px) {
+    .menu-icon {
+      display: block;
+    }
+    .nav-links {
+      display: none;
+    }
+    .text-on-image .subtitle {
+      font-size: 1rem;
+    }
+    .text-on-image .heading {
+      font-size: 1.6rem;
+    }
+    .text-on-image .body-text {
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media (min-width: 600px) {
+    .text-on-image .subtitle {
+      font-size: 1.2rem;
+    }
+    .text-on-image .heading {
+      font-size: 2.3rem;
+    }
+    .text-on-image .body-text {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (min-width: 900px) {
+    .text-on-image .subtitle {
+      font-size: 1.4rem;
+    }
+    .text-on-image .heading {
+      font-size: 2.8rem;
+    }
+    .text-on-image .body-text {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .text-on-image .subtitle {
+      font-size: 1.6rem;
+    }
+    .text-on-image .heading {
+      font-size: 3.4rem;
+    }
+    .text-on-image .body-text {
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media (min-width: 1536px) {
+    .text-on-image .subtitle {
+      font-size: 2rem;
+    }
+    .text-on-image .heading {
+      font-size: 4rem;
+    }
+    .text-on-image .body-text {
+      font-size: 1.2rem;
+    }
+  }
+  
