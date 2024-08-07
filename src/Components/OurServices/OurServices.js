@@ -7,6 +7,7 @@ import img2 from "../../assets/OurServices/img2.jpg";
 import img3 from "../../assets/OurServices/img3.jpg";
 import { rootStyle, tabsStyle, serviceCardStyle } from './OurServices.styles';
 
+
 const imageDetails = [
   {
     label: "Business Analytics",
