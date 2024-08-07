@@ -1,36 +1,28 @@
-import NavBar from './Components/NavBar/nav'
-import Footer from './Components/Footer/footer'
-import Services from './Components/Services/services'
-import DigitalMarketing from './Components/DigitalMarketing/digitalMarketing';
+import NavBar from "./Components/NavBar/nav";
+import Footer from "./Components/Footer/Footer";
+import DigitalMarketing from "./Components/DigitalMarketing/digitalMarketing";
+import UniqueFeatures from "./Components/WhyChooseUs/UniqueFeatures";
 
-// src/App.js
-
-import React from 'react';
-import OurServices from './Components/OurServices/OurServices';
-
- 
-import './App.css';
-import Header from "./Components/Header/Header"
-import Footer from "./Components/Footer/footer"
-import Stats from "./Components/Stats/Stats"
-import Whoweare from "./Components/Whoweare/whoweare"
-import Testimonials from "./Components/Testimonials/Testimonials"
+import React from "react";
+import OurServices from "./Components/OurServices/OurServices";
+import "./App.css";
+import Header from "./Components/Header/Header";
+import Stats from "./Components/Stats/Stats";
+import Whoweare from "./Components/Whoweare/whoweare";
+import Testimonials from "./Components/Testimonials/Testimonials";
 function App() {
   return (
     <div className="App">
-      <NavBar/>
-      <Services/>
-      <DigitalMarketing/>
-      <Footer/>
+      {/* <UniqueFeatures /> */}
 
-
-      <Header />
+      <NavBar />
       <Stats />
       <Whoweare />
-      
       <OurServices />
+      {/* <Header /> 
+      <UniqueFeatures />*/}
       <Testimonials />
-<Footer />
+      <Footer />
     </div>
   );
 }

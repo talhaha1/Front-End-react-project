@@ -2,11 +2,10 @@ import React, { useState, useEffect } from "react";
 import { Box, Tab, Tabs, useMediaQuery, useTheme } from "@mui/material";
 import SwipeableViews from "react-swipeable-views";
 import ServiceCard from "./ServiceCard";
-import img1 from "../../assets/OurServices/img1.jpg";
-import img2 from "../../assets/OurServices/img2.jpg";
-import img3 from "../../assets/OurServices/img3.jpg";
+import img1 from "../../assets/img1.jpg";
+import img2 from "../../assets/img2.jpg";
+import img3 from "../../assets/img3.jpg";
 import { rootStyle, tabsStyle, serviceCardStyle } from './OurServices.styles';
-
 
 const imageDetails = [
   {
@@ -41,36 +40,30 @@ const OurServices = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setSelectedTab((prev) => (prev + 1) % imageDetails.length);
-    }, 5000); // change tab every 5 seconds
+    }, 5000); 
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <Box css={rootStyle}>
-      <Box css={tabsStyle}>
+    <Box sx={rootStyle}>
+      <Box sx={tabsStyle}>
         <Tabs
           value={selectedTab}
           onChange={handleChange}
           centered={!isMobile}
           variant={isMobile ? "scrollable" : "standard"}
           scrollButtons="auto"
-          sx={{
-            backgroundColor: '#000000', // Black background for tabs
-            color: '#FFFFFF', // White text color for tabs
-            '.MuiTabs-indicator': {
-              backgroundColor: '#FFFFFF', // White indicator color
-            },
-          }}
         >
           {imageDetails.map((detail, index) => (
             <Tab 
               key={index} 
               label={detail.label} 
               sx={{
-                color: '#FFFFFF', // White text color for each tab
+                color: '#454545', // White text color for each tab
                 '&.Mui-selected': {
-                  color: '#FFFFFF', // White text color for selected tab
+                  color: '#000000', // Black text color for selected tab
+                  backgroundColor: '#FFFFFF', // White background for selected tab
                 },
               }}
             />
@@ -81,9 +74,9 @@ const OurServices = () => {
         index={selectedTab}
         onChangeIndex={(index) => setSelectedTab(index)}
         enableMouseEvents
-        animateTransitions={true} // Enable smooth transitions
-        springConfig={{ duration: 300, ease: 'easeInOut' }} // Adjust timing and easing
-        css={serviceCardStyle}
+        animateTransitions
+        springConfig={{ duration: 300, ease: 'easeInOut' }} 
+        sx={serviceCardStyle}
       >
         {imageDetails.map((detail, index) => (
           <ServiceCard

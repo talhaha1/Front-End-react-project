@@ -1,5 +1,3 @@
-// src/Components/ServiceCard/ServiceCard.js
-
 import React from "react";
 import PropTypes from "prop-types";
 import { Box, Card, CardMedia, CardContent, Typography, Button, useMediaQuery, useTheme } from "@mui/material";
@@ -14,25 +12,24 @@ const ServiceCard = ({ image, heading, text }) => {
         width: "100%",
         typography: "body1",
         padding: 2,
-        backgroundColor: "#000000", // Black background for the entire component
-        color: "#FFFFFF",           // White text color for the entire component
+        backgroundColor: "#000000", // Black background
+        color: "#FFFFFF", // White text color
         display: "flex",
         flexDirection: "column",
-        alignItems: "center",       // Center align the content horizontally
-        overflowX: "hidden",        // Prevent horizontal scrolling
-        boxSizing: "border-box",    // Ensure padding is included in the element's total width and height
+        alignItems: "center",
+        overflowX: "hidden",
+        boxSizing: "border-box",
       }}
     >
-      {/* Heading Section */}
       <Box
         sx={{
-          textAlign: "center",       // Center align text
-          marginBottom: 4,           // Space between heading and card
-          padding: 4,                // Padding around the text
-          width: "85%",              // Full width of the container
+          textAlign: "center",
+          marginBottom: 4,
+          padding: 4,
+          width: "85%",
           backgroundColor: "#000000", // Black background
-          color: "#FFFFFF",           // White text color
-          borderRadius: 1,           // Rounded corners
+          color: "#FFFFFF", // White text color
+          borderRadius: 1,
         }}
       >
         <Typography variant="h4" component="h1" sx={{ marginBottom: 1 }}>
@@ -43,30 +40,29 @@ const ServiceCard = ({ image, heading, text }) => {
         </Typography>
       </Box>
 
-      {/* Service Card Section */}
       <Box
         sx={{
           display: "flex",
-          flexDirection: isMobile ? "column" : "row", // Column on mobile, row otherwise
-          justifyContent: "center", // Center the card horizontally
+          flexDirection: isMobile ? "column" : "row",
+          justifyContent: "center",
           alignItems: "center",
-          width: "100%",            // Full width of the container
-          padding: 2,               // Padding around the card
-          boxSizing: "border-box",  // Ensure padding is included in the element's total width and height
-          overflowX: "hidden",      // Prevent horizontal scrolling
+          width: "100%",
+          padding: 2,
+          boxSizing: "border-box",
+          overflowX: "hidden",
         }}
       >
         <Card
           sx={{
-            width: isMobile ? "100%" : "80%",  // Full width on mobile, adjust width as needed otherwise
-            maxWidth: "100%",                 // Ensure the card does not exceed the viewport width
-            backgroundColor: "#000000",       // Black background
-            color: "#FFFFFF",                 // White text color
-            boxShadow: "none",                // Remove box shadow
+            width: isMobile ? "100%" : "80%",
+            maxWidth: "100%",
+            backgroundColor: "#000000", // Black background
+            color: "#FFFFFF", // White text color
+            boxShadow: "none",
             overflow: "hidden",
-            borderRadius: 1,                  // Rounded corners
+            borderRadius: 1,
             display: "flex",
-            flexDirection: isMobile ? "column" : "row", // Column on mobile, row otherwise
+            flexDirection: isMobile ? "column" : "row",
           }}
         >
           <CardMedia
@@ -74,9 +70,9 @@ const ServiceCard = ({ image, heading, text }) => {
             image={image}
             alt={heading}
             sx={{
-              width: isMobile ? "100%" : "50%",  // Full width on mobile, half width otherwise
-              height: "auto",                    // Maintain aspect ratio
-              objectFit: "cover",                // Cover the area
+              width: isMobile ? "100%" : "50%",
+              height: "auto",
+              objectFit: "cover",
             }}
           />
           <CardContent
@@ -85,15 +81,15 @@ const ServiceCard = ({ image, heading, text }) => {
               flexDirection: "column",
               justifyContent: "center",
               padding: 2,
-              width: isMobile ? "100%" : "50%",  // Full width on mobile, half width otherwise
-              textAlign: isMobile ? "center" : "left", // Center text on mobile, left-align otherwise
-              marginLeft: isMobile ? 0 : 4, // Add margin left on desktop
+              width: isMobile ? "100%" : "50%",
+              textAlign: isMobile ? "center" : "left",
+              marginLeft: isMobile ? 0 : 4,
             }}
           >
             <Typography variant="h5" component="div" sx={{ marginBottom: 2 }}>
               {heading}
             </Typography>
-            <Typography variant="body2" color="white" sx={{ marginBottom: 2 }}>
+            <Typography variant="body2" sx={{ marginBottom: 2 }}>
               {text}
             </Typography>
             <Button variant="contained" color="secondary">
