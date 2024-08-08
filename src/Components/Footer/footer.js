@@ -41,21 +41,21 @@ export default function Footer() {
               <IconButton
                 href="https://www.facebook.com/analyzinn"
                 aria-label="Facebook"
-                className="icon-button"
+                sx={{ color: '#fff' }}
               >
                 <FacebookIcon />
               </IconButton>
               <IconButton
                 href="https://www.linkedin.com/company/analyzinn/"
                 aria-label="LinkedIn"
-                className="icon-button"
+                sx={{ color: '#fff' }}
               >
                 <LinkedInIcon />
               </IconButton>
               <IconButton
                 href="mailto:admin@analyzinn.com"
                 aria-label="Email"
-                className="icon-button"
+                sx={{ color: '#fff' }}
               >
                 <EmailIcon />
               </IconButton>

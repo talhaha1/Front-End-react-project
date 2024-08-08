@@ -1,131 +1,144 @@
 .services-section {
-    background-color: #2a2b72; /* Background color */
-    color: #d4d4d4; /* Text color */
-    padding: 50px 20px;
-    text-align: center;
-  }
-  
+  background-color: #2a2b72; /* Background color */
+  color: #d4d4d4; /* Text color */
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.services-title {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.services-intro {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #d4d4d4;
+}
+
+.services-list,
+.services-lists {
+  list-style-type: disc;
+  padding-left: 40px;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.services-list li,
+.services-lists li {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.image-section {
+  background-color: #2a2b72; 
+  padding: 20px 0;
+}
+
+.slide-item {
+  text-align: center;
+  padding: 10px;
+}
+
+.slide-item img {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 10px;
+}
+
+.slide-item p {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.next {
+  right: 10px;
+}
+
+.prev {
+  left: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
   .services-title {
     font-size: 2rem;
-    margin-bottom: 5px;
   }
-  
+  .services-intro {
+    font-size: 1rem;
+  }
+  .services-list li,
+  .services-lists li {
+    font-size: 1rem;
+  }
+  .services-list,
+  .services-lists {
+    padding-left: 20px;
+  }
+  .grid-item {
+    flex-basis: 100%;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .services-title {
+    font-size: 2.5rem;
+  }
+  .services-intro {
+    font-size: 1.1rem;
+  }
+  .services-list li,
+  .services-lists li {
+    font-size: 1rem;
+  }
+  .services-list,
+  .services-lists {
+    padding-left: 30px;
+  }
+  .grid-item {
+    flex-basis: 45%;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1200px) {
+  .services-title {
+    font-size: 3rem;
+  }
   .services-intro {
     font-size: 1.2rem;
-    margin-bottom: 20px;
-    color: #d4d4d4;
   }
-  
-  .services-list {
-    list-style-type: disc;
-    padding-left: 40px;
-    text-align: left;
-    margin: 0 auto;
-  }
-
-  .services-lists {
-    list-style-type: disc;
-    padding-left: 250px;
-    text-align: left;
-  }
-  
-  .services-list li {
+  .services-list li,
+  .services-lists li {
     font-size: 1.1rem;
-    margin: 10px 0;
   }
+  .services-list,
+  .services-lists {
+    padding-left: 40px;
+  }
+  .grid-item {
+    flex-basis: 30%;
+  }
+}
 
-  .image-section {
-    background-color: #2a2b72; 
-    padding: 20px 0;
+@media (min-width: 1200px) {
+  .grid-item {
+    flex-basis: 22%;
   }
-  
-  .slide-item {
-    text-align: center;
-    padding: 10px;
+  .services-list,
+  .services-lists {
+    padding-left: 250px;
   }
-  
-  .slide-item img {
-    width: 100%;
-    max-width: 300px;
-    margin-bottom: 10px;
-  }
-  
-  .slide-item p {
-    font-size: 1rem;
-    font-weight: bold;
-    color: #ffffff;
-  }
-
-  .arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: #000;
-    color: #fff;
-    padding: 10px;
-    border-radius: 50%;
-    cursor: pointer;
-    z-index: 1;
-  }
-  
-  .next {
-    right: 10px;
-  }
-  
-  .prev {
-    left: 10px;
-  }
-  
-  
-  /* Responsive design */
-  @media (max-width: 600px) {
-    .services-title {
-      font-size: 2rem;
-    }
-    .services-intro {
-      font-size: 1rem;
-    }
-    .services-list li {
-      font-size: 1rem;
-    }
-    .grid-item {
-      flex-basis: 100%;
-    }
-  }
-  
-  @media (min-width: 600px) and (max-width: 900px) {
-    .services-title {
-      font-size: 2.5rem;
-    }
-    .services-intro {
-      font-size: 1.1rem;
-    }
-    .services-list li {
-      font-size: 1rem;
-    }
-    .grid-item {
-      flex-basis: 45%;
-    }
-  }
-  
-  @media (min-width: 900px) and (max-width: 1200px) {
-    .services-title {
-      font-size: 3rem;
-    }
-    .services-intro {
-      font-size: 1.2rem;
-    }
-    .services-list li {
-      font-size: 1.1rem;
-    }
-    .grid-item {
-      flex-basis: 30%;
-    }
-  }
-  
-  @media (min-width: 1200px) {
-    .grid-item {
-      flex-basis: 22%;
-    }
-  }
-  
+}
