@@ -1,9 +1,9 @@
 import React from 'react';
 import './digitalMarketing.css';
-import seo from '../../assests/seo.jpg';
-import email from '../../assests/Email-Marketing.jpg';
-import web from '../../assests/webDesign.png';
-import content from '../../assests/contentWriting.jpg';
+import seo from '../../assets/seo.jpg';
+import email from '../../assets/Email-Marketing.jpg';
+import web from '../../assets/webDesign.png';
+import content from '../../assets/contentWriting.jpg';
 
 const DigitalMarketing = () => {
   return (
