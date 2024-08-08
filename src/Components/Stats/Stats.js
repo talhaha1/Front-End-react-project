@@ -16,6 +16,7 @@ const Stats = () => {
 
     const updateval = (setval, target, inc) => {
       let start = 0;
+      
       const stepTime = Math.abs(Math.floor(duration / (target / inc)));
 
       const timer = setInterval(() => {
