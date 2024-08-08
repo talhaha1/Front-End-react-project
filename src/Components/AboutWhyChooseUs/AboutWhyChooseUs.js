@@ -1,5 +1,7 @@
 import React from 'react';
 import img from "../../assets/AbourWhyChooseUs/img.jpeg";
+import Nav from "../NavBar/nav"
+// import Footer from "../Footer/Footer"
 
 const WhyChooseUs = () => {
     const containerStyle = {
@@ -64,7 +66,10 @@ const WhyChooseUs = () => {
         marginLeft: '30%',
     };
 
-    return (
+    return (<div>
+        <div>
+            <Nav />
+        </div>
         <div style={containerStyle}>
             <div style={contentStyle}>
                 <div style={imageStyle}>
@@ -91,6 +96,7 @@ const WhyChooseUs = () => {
                 <div style={listItemStyle}>▸ Automation and Integrations</div>
                 <div style={lastItemStyle}>▸ Data Management & Data Engineering</div>
             </div>
+        </div>
         </div>
     );
 };
