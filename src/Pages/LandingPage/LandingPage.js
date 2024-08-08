@@ -9,11 +9,12 @@ import Stats from "../../Components/Stats/Stats";
 import Whoweare from "../../Components/Whoweare/whoweare";
 import Testimonials from "../../Components/Testimonials/Testimonials";
 import RequestInfo from "../../Components/RequestInfo/RequestInfo";
-
+import Home from "../../Components/Home/Home";
 const LandingPage = () => {
   return (
     <div>
       <NavBar />
+      <Home />
       <Stats />
       <Whoweare />
       <OurServices />
@@ -21,7 +22,7 @@ const LandingPage = () => {
       <UniqueFeatures />
       <Testimonials />
       <RequestInfo />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };
