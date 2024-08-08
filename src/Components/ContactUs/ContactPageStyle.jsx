@@ -3,7 +3,7 @@ import { styled } from "@mui/material/styles";
 export const MainBox = styled(Box)(({ theme }) => ({
   backgroundColor: "black",
   minHeight: "100vh",
-  minWidth: "99vw",
+  minWidth: "100vw",
   padding: 0, // Ensure no padding
   margin: 0, // Ensure no margin
   display: "flex",
@@ -34,9 +34,11 @@ export const HeadingTypography = styled(Typography)(({ theme }) => ({
   fontFamily: "Helvetica, sans-serif",
   fontSize: "2.9rem", // Default for extra small devices
   marginLeft: "2rem",
+  marginTop: "2.4rem",
   [theme.breakpoints.up("sm")]: {
     fontSize: "4rem", // small devices
     marginLeft: "5rem",
+    marginTop: "2rem",
   },
   [theme.breakpoints.up("md")]: {
     fontSize: "5.1rem", // medium devices
@@ -45,6 +47,7 @@ export const HeadingTypography = styled(Typography)(({ theme }) => ({
   [theme.breakpoints.up("lg")]: {
     fontSize: "4.5rem", // large devices
     marginLeft: "2rem",
+    marginTop: "1.8rem",
   },
   [theme.breakpoints.up("xl")]: {
     fontSize: "8rem", // extra large devices
