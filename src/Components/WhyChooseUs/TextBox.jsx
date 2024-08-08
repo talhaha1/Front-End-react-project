@@ -40,7 +40,7 @@ const TextBox = ({ index, text }) => {
           sx: {
             fontSize: { xs: 50, sm: 65, md: 80, lg: 50, xl: 110 },
             marginBottom: { xs: 58, sm: 70, md: 90, lg: 55, xl: 98 },
-            marginLeft: { xs: 40, sm: 27, md: 27, lg: 24, xl: -105 },
+            marginLeft: { xs: 75, sm: 39, md: 27, lg: 24, xl: -105 },
             color: "#1B03A3",
             zIndex: 2,
             textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
@@ -61,8 +61,8 @@ const TextBox = ({ index, text }) => {
           position: "relative",
           zIndex: 2,
           marginRight: { md: 10, xl: 70 },
-          marginTop: { xs: 0, sm: -25, md: -20, lg: -9, xl: -20 },
-          marginLeft: { xs: -14, sm: -36, md: -37, lg: -30, xl: -45 },
+          marginTop: { xs: 0, sm: -10, md: -20, lg: -9, xl: -20 },
+          marginLeft: { xs: -14, sm: -27, md: -37, lg: -30, xl: -45 },
           textShadow: "2px 2px 4px rgba(0, 0, 0, 0.7)",
           minWidth: { xs: "12rem" },
         }}

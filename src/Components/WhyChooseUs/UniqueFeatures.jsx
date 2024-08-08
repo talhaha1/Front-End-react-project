@@ -85,7 +85,7 @@ const UniqueFeatures = () => {
           sx={{
             maxWidth: { xs: 300, sm: 600, md: 700, lg: 800, xl: 1500 },
             marginTop: { xs: 6, sm: 5, md: 7, lg: 2, xl: 8 },
-            marginLeft: { xs: 23, sm: 12, md: 12, lg: 25, xl: 20 },
+            marginLeft: { xs: 40, sm: 22, md: 12, lg: 25, xl: 20 },
             width: "100%",
             "& .MuiTabs-scrollButtons": {
               color: "white",
