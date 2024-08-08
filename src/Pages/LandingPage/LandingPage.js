@@ -22,7 +22,7 @@ const LandingPage = () => {
       <UniqueFeatures />
       <Testimonials />
       <RequestInfo />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
