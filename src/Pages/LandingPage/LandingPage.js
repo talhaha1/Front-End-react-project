@@ -8,6 +8,7 @@ import Header from "../../Components/Header/Header";
 import Stats from "../../Components/Stats/Stats";
 import Whoweare from "../../Components/Whoweare/whoweare";
 import Testimonials from "../../Components/Testimonials/Testimonials";
+import RequestInfo from "../../Components/RequestInfo/RequestInfo";
 
 const LandingPage = () => {
   return (
@@ -19,8 +20,8 @@ const LandingPage = () => {
       <Header />
       <UniqueFeatures />
       <Testimonials />
-
-      <Footer />
+      <RequestInfo />
+      {/* <Footer /> */}
     </div>
   );
 };
