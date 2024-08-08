@@ -39,7 +39,7 @@
   }
   
   .consultation-button {
-    background-color: #2a347a;
+    background-color: #6bb1fc;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -53,41 +53,36 @@
   }
   
   .consultation-button:hover {
-    background-color: #0056b3;
+    background-color: #15293f;
   }
   
   /* Responsive Design */
-  @media (max-width: 768px) {
+  @media (max-width: 480px) {
+    .home-container {
+      justify-content: center; 
+      padding: 20px; 
+    }
+  
+    .overlay {
+      margin-right: 0; 
+      max-width: none; 
+      width: 100%; 
+      padding: 20px; 
+      box-sizing: border-box;
+    }
+  
     h1 {
       font-size: 1.5em;
     }
   
     p {
-      font-size: 0.9em;
+      font-size: 1em;
     }
   
     .consultation-button {
-      padding: 10px 20px;
+      padding: 12px 15px;
       font-size: 14px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    h1 {
-      font-size: 1.2em;
-    }
-  
-    p {
-      font-size: 0.8em;
-    }
-  
-    .consultation-button {
-      padding: 8px 16px;
-      font-size: 12px;
-    }
-  
-    .overlay {
-      margin-right: 20px; 
+      width: 80%; 
     }
   }
   
