@@ -1,10 +1,10 @@
-import React from "react";
-import LandingPage from "./Pages/LandingPage/LandingPage";
+import AboutWhyChooseUs from './Components/AboutWhyChooseUs/AboutWhyChooseUs';
+
 function App() {
   return (
-    <div className="App">
-      <LandingPage />
-
+    <div>
+      <AboutWhyChooseUs />
+      {/* Other components */}
     </div>
   );
 }
