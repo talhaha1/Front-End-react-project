@@ -26,8 +26,8 @@ export const MainBox = styled(Box)(({ theme }) => ({
   },
 
   [theme.breakpoints.only("lg")]: {
-    minHeight: "90vh",
-    maxHeight: "90vh",
+    minHeight: "94vh",
+    maxHeight: "94vh",
   },
   [theme.breakpoints.only("xl")]: {
     minHeight: "100vh",
@@ -79,12 +79,12 @@ export const HeadingTypography = styled(Typography)(({ theme }) => ({
 }));
 
 export const ContentContainer = styled(Box)(({ theme }) => ({
-  backgroundColor: "#CCCCCC",
+  backgroundColor: "white",
   padding: "2rem",
   marginTop: "8rem",
   marginLeft: "-13rem",
   borderRadius: "5px",
-
+  border: "1.5px solid black",
   display: "flex",
   justifyContent: "flex-start",
   alignItems: "flex-start", // Align items to the start (left) of the container
@@ -116,7 +116,7 @@ export const ContentContainer = styled(Box)(({ theme }) => ({
   [theme.breakpoints.up("lg")]: {
     // padding: "10rem",
     marginTop: "2.5rem",
-    marginLeft: "1.2rem",
+    marginLeft: "2.5rem",
     minHeight: "26.5rem",
     maxWidth: "35rem",
     minWidth: "35rem",
@@ -130,31 +130,6 @@ export const ContentContainer = styled(Box)(({ theme }) => ({
     minWidth: "61rem",
   },
 }));
-
-// export const ContentTypography1 = styled(Typography)(({ theme }) => ({
-//   color: "white",
-//   fontFamily: "Helvetica, sans-serif",
-//   marginBottom: "1rem",
-//   fontWeight: "bold",
-//   fontSize: "2.1rem",
-//   lineHeight: 1.3,
-//   [theme.breakpoints.up("sm")]: {
-//     fontSize: "2.6rem",
-//     lineHeight: 1.4,
-//   },
-//   [theme.breakpoints.up("md")]: {
-//     fontSize: "3rem",
-//     lineHeight: 1.4,
-//   },
-//   [theme.breakpoints.up("lg")]: {
-//     fontSize: "2.1rem",
-//     lineHeight: 1.2,
-//   },
-//   [theme.breakpoints.up("xl")]: {
-//     fontSize: "3.9rem",
-//     lineHeight: 1.4,
-//   },
-// }));
 
 export const ContentTypography2 = styled(Typography)(({ theme }) => ({
   color: "black",
@@ -185,269 +160,6 @@ export const ContentTypography2 = styled(Typography)(({ theme }) => ({
   },
 }));
 
-// export const ContentTypography3 = styled(Typography)(({ theme }) => ({
-//   color: "white",
-//   fontFamily: "Helvetica, sans-serif",
-//   fontWeight: "bold",
-//   marginBottom: "1rem",
-//   fontSize: "1.1rem",
-
-//   paddingTop: "4rem",
-//   [theme.breakpoints.up("sm")]: {
-//     fontSize: "1.5rem",
-//     paddingTop: "6rem",
-//   },
-//   [theme.breakpoints.up("md")]: {
-//     fontSize: "1.6rem",
-//     paddingTop: "3rem",
-//   },
-//   [theme.breakpoints.up("lg")]: {
-//     fontSize: "1.1rem",
-//     paddingTop: "2.2rem",
-//   },
-//   [theme.breakpoints.up("xl")]: {
-//     fontSize: "2.0rem",
-//     lineHeight: 1.9,
-//     paddingTop: "7rem",
-//   },
-// }));
-
-// export const IconContainer = styled(Box)(({ theme }) => ({
-//   display: "flex",
-//   marginLeft: "1.2rem",
-//   marginTop: "-1rem",
-//   "& > *": {
-//     marginRight: "1rem",
-//     fontSize: "2rem",
-//   },
-//   [theme.breakpoints.up("sm")]: {
-//     marginTop: "-0.8rem",
-//     marginLeft: "2.3rem",
-//   },
-//   [theme.breakpoints.up("md")]: {
-//     marginTop: "0rem",
-//     marginLeft: "2.7rem",
-//   },
-//   [theme.breakpoints.up("lg")]: {
-//     marginTop: "-1rem",
-//     marginLeft: "0.7rem",
-//   },
-//   [theme.breakpoints.up("xl")]: {
-//     marginTop: "-1rem",
-//     marginLeft: "3.7rem",
-//   },
-// }));
-
-// export const FullWidthBox = styled(Box)(({ theme }) => ({
-//   backgroundColor: "white",
-//   width: "99vw",
-//   display: "flex",
-//   flexDirection: "row", // Align items side by side
-//   justifyContent: "space-between", // Distribute space between items
-//   alignItems: "center",
-//   padding: "1rem",
-//   [theme.breakpoints.only("xs")]: {
-//     height: "22vh", // Adjust height for extra small screens
-//     flexDirection: "column",
-//   },
-//   [theme.breakpoints.up("sm")]: {
-//     flexDirection: "column",
-//     height: "26vh", // Adjust height for small screens
-//   },
-//   [theme.breakpoints.up("md")]: {
-//     flexDirection: "row",
-//     height: "29vh", // Adjust height for medium screens
-//   },
-//   [theme.breakpoints.up("lg")]: {
-//     flexDirection: "row",
-//     height: "15vh", // Adjust height for large screens
-//     width: "70vw",
-//   },
-//   [theme.breakpoints.up("xl")]: {
-//     flexDirection: "row",
-//     height: "22vh", // Adjust height for extra-large screens
-//   },
-// }));
-
-// export const LocationBox = styled(Box)(({ theme }) => ({
-//   backgroundColor: "white",
-//   minHeight: "10vh",
-//   minWidth: "10vw",
-//   marginTop: "2rem",
-//   display: "flex",
-//   justifyContent: "flex-start",
-//   alignItems: "flex-start", // Align items to the start (left) of the container
-//   overflow: "hidden",
-//   boxSizing: "border-box",
-//   [theme.breakpoints.only("xs")]: {
-//     minHeight: "9vh",
-//     maxHeight: "9vh",
-//     minWidth: "90vw",
-//     maxWidth: "40vw",
-//     marginTop: "0rem",
-//     marginLeft: "0rem",
-//   },
-//   [theme.breakpoints.only("sm")]: {
-//     minHeight: "9vh",
-//     maxHeight: "9vh",
-//     minWidth: "90vw",
-//     maxWidth: "90vw",
-//     marginTop: "1.5rem",
-//     marginRight: "1.5rem",
-//   },
-//   [theme.breakpoints.only("md")]: {
-//     minHeight: "9vh",
-//     maxHeight: "9vh",
-//     minWidth: "47vw",
-//     maxWidth: "47vw",
-//     marginBottom: "15rem",
-//     marginRight: "1.5rem",
-//   },
-//   [theme.breakpoints.only("lg")]: {
-//     minHeight: "12vh",
-//     minWidth: "35vw",
-//     maxWidth: "35vw",
-//     marginTop: "1rem",
-//     marginLeft: "6.5rem",
-//   },
-//   [theme.breakpoints.only("xl")]: {
-//     minHeight: "15vh",
-//     minWidth: "45vw",
-//     maxWidth: "45vw",
-//     marginTop: "1rem",
-//     marginLeft: "7.5rem",
-//   },
-// }));
-
-// export const EmailBox = styled(Box)(({ theme }) => ({
-//   backgroundColor: "white",
-//   minHeight: "10vh",
-//   minWidth: "10vw",
-//   marginTop: "2rem",
-//   display: "flex",
-//   justifyContent: "flex-start",
-//   alignItems: "flex-start", // Align items to the start (left) of the container
-//   overflow: "hidden",
-//   boxSizing: "border-box",
-//   [theme.breakpoints.only("xs")]: {
-//     minHeight: "9vh",
-//     maxHeight: "9vh",
-//     minWidth: "90vw",
-//     maxWidth: "40vw",
-//     marginTop: "1.5rem",
-//     marginBottom: "4rem",
-//     marginLeft: "0rem",
-//   },
-//   [theme.breakpoints.only("sm")]: {
-//     minHeight: "9vh",
-//     maxHeight: "9vh",
-//     minWidth: "90vw",
-//     maxWidth: "90vw",
-//     marginBottom: "4.5rem",
-//     marginRight: "1.5rem",
-//   },
-//   [theme.breakpoints.only("md")]: {
-//     minHeight: "9vh",
-//     maxHeight: "9vh",
-//     minWidth: "47vw",
-//     maxWidth: "47vw",
-//     marginBottom: "15rem",
-//     marginRight: "1.5rem",
-//   },
-//   [theme.breakpoints.only("lg")]: {
-//     minHeight: "12vh",
-//     minWidth: "35vw",
-//     maxWidth: "35vw",
-//     marginTop: "-0.5rem",
-//     marginLeft: "7rem",
-//     marginRight: "5rem",
-//   },
-//   [theme.breakpoints.only("xl")]: {
-//     minHeight: "15vh",
-//     minWidth: "40vw",
-//     maxWidth: "40vw",
-//     marginTop: "1rem",
-//     marginLeft: "7rem",
-//     marginRight: "5rem",
-//   },
-// }));
-
-// export const TypographyLocationAndEmailHeading = styled(Typography)(
-//   ({ theme }) => ({
-//     color: "black",
-//     fontFamily: "Helvetica, sans-serif",
-//     fontWeight: "bold",
-//     fontSize: "1.4rem",
-//     marginRight: "11rem",
-//     [theme.breakpoints.up("sm")]: {
-//       fontSize: "1.8rem",
-//       marginRight: "27rem",
-//     },
-//     [theme.breakpoints.up("md")]: {
-//       fontSize: "1.8rem",
-//       marginRight: "24rem",
-//     },
-//     [theme.breakpoints.up("lg")]: {
-//       fontSize: "1.1rem",
-//       marginRight: "17rem",
-//     },
-//     [theme.breakpoints.up("xl")]: {
-//       fontSize: "3.0rem",
-//       marginTop: "-0.4rem",
-//       marginRight: "27rem",
-//     },
-//   })
-// );
-
-// export const ContentTypographyLocation = styled(Typography)(({ theme }) => ({
-//   color: "black",
-//   fontFamily: "Helvetica, sans-serif",
-//   fontSize: "1.1rem",
-//   marginRight: "6rem",
-//   [theme.breakpoints.up("sm")]: {
-//     fontSize: "2rem",
-//     marginRight: "1rem",
-//   },
-
-//   [theme.breakpoints.up("md")]: {
-//     fontSize: "1.9rem",
-//     marginRight: "6rem",
-//   },
-//   [theme.breakpoints.up("lg")]: {
-//     fontSize: "1.3rem",
-//     marginTop: "0.6rem",
-//     marginRight: "4rem",
-//   },
-//   [theme.breakpoints.up("xl")]: {
-//     fontSize: "2.5rem",
-//   },
-// }));
-
-// export const ContentTypographyEmail = styled(Typography)(({ theme }) => ({
-//   color: "black",
-//   fontFamily: "Helvetica, sans-serif",
-//   fontSize: "1.1rem",
-//   marginRight: "3rem",
-//   [theme.breakpoints.up("sm")]: {
-//     fontSize: "2rem",
-//     marginRight: "12rem",
-//   },
-
-//   [theme.breakpoints.up("md")]: {
-//     fontSize: "1.9rem",
-//     marginLeft: "1rem",
-//   },
-//   [theme.breakpoints.up("lg")]: {
-//     fontSize: "1.3rem",
-//     marginTop: "0.6rem",
-//     marginRight: "7rem",
-//   },
-//   [theme.breakpoints.up("xl")]: {
-//     fontSize: "2.5rem",
-//     marginRight: "10rem",
-//   },
-// }));
-
 export const FormContainer = styled(Box)(({ theme }) => ({
   backgroundColor: "transparent",
   padding: "2rem",
@@ -457,7 +169,7 @@ export const FormContainer = styled(Box)(({ theme }) => ({
   display: "flex",
   justifyContent: "flex-start",
   alignItems: "flex-start", // Align items to the start (left) of the container
-  overflow: "hidden",
+  //overflow: "hidden",
   flexDirection: "column",
   [theme.breakpoints.only("xs")]: {
     minHeight: "42rem",
@@ -566,6 +278,12 @@ export const ErrorMessage = styled(Typography)(({ theme }) => ({
   marginTop: "-1rem",
   padding: theme.spacing(0.5),
   borderRadius: theme.shape.borderRadius,
+  [theme.breakpoints.up("sm")]: {
+    fontSize: "1rem",
+  },
+  [theme.breakpoints.up("xl")]: {
+    fontSize: "1.3rem",
+  },
 }));
 
 export const SubmitButton = styled(Button)(({ theme }) => ({
@@ -580,16 +298,22 @@ export const SubmitButton = styled(Button)(({ theme }) => ({
     fontSize: "1rem",
     marginRight: "3rem",
   },
+  [theme.breakpoints.up("sm")]: {
+    minWidth: "40rem",
+    border: `1px solid #007bff`,
+    fontSize: "1.5rem",
+    marginRight: "3rem",
+  },
   [theme.breakpoints.up("md")]: {
     minWidth: "27rem",
     border: `1px solid #007bff`,
-    fontSize: "1rem",
+    fontSize: "1.3rem",
     marginRight: "3rem",
   },
   [theme.breakpoints.up("lg")]: {
     minWidth: "31rem",
     border: `1px solid #007bff`,
-    fontSize: "1rem",
+    fontSize: "1.1rem",
     marginRight: "3rem",
   },
   [theme.breakpoints.up("xl")]: {
@@ -607,7 +331,8 @@ export const SubmitButton = styled(Button)(({ theme }) => ({
 export const FormField = styled(TextField)(({ theme }) => ({
   marginBottom: theme.spacing(2),
   borderRadius: "5px",
-  backgroundColor: "#CCCCCC", // Set background to white for the input
+  backgroundColor: "white", // Set background to white for the input
+  border: `1.5px solid black`,
   "& .MuiOutlinedInput-root": {
     boxShadow: "none",
     "& fieldset": {
@@ -628,11 +353,20 @@ export const FormField = styled(TextField)(({ theme }) => ({
     "&.MuiInputLabel-shrink": {
       transform: "translate(14px, -6px) scale(0.75)", // Adjust position when focused or shrunk
     },
-    [theme.breakpoints.up("lg")]: {
+    [theme.breakpoints.only("xs")]: {
       fontSize: "1.2rem", // Larger font size on large screens
     },
+    [theme.breakpoints.only("sm")]: {
+      fontSize: "1.5rem", // Larger font size on large screens
+    },
+    [theme.breakpoints.only("md")]: {
+      fontSize: "1.3rem", // Larger font size on large screens
+    },
+    [theme.breakpoints.up("lg")]: {
+      fontSize: "1.1rem", // Larger font size on large screens
+    },
     [theme.breakpoints.up("xl")]: {
-      fontSize: "1.8rem", // Larger font size on large screens
+      fontSize: "2.3rem", // Larger font size on large screens
     },
   },
   "& .MuiOutlinedInput-input": {
@@ -662,15 +396,16 @@ export const FormField = styled(TextField)(({ theme }) => ({
 }));
 
 export const ClickHereToScheduleButton = styled(Button)(({ theme }) => ({
+  //backgroundColor: "#CCCCCC",
   backgroundColor: "white",
   color: "#007bff",
   padding: theme.spacing(1, 4),
   borderRadius: "5px",
-
+  border: `2px solid #007bff`,
   [theme.breakpoints.up("xs")]: {
     minWidth: "40rem",
     border: `1px solid #007bff`,
-    fontSize: "1rem",
+    fontSize: "1.2rem",
     marginRight: "1rem",
     marginTop: "1.4rem",
     marginLeft: "10rem",
@@ -694,7 +429,7 @@ export const ClickHereToScheduleButton = styled(Button)(({ theme }) => ({
   [theme.breakpoints.up("lg")]: {
     minWidth: "31rem",
     border: `1px solid #007bff`,
-    fontSize: "1rem",
+    fontSize: "1.1rem",
     marginRight: "5rem",
     marginTop: "3.8rem",
     marginLeft: "0.7rem",

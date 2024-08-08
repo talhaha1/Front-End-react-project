@@ -10,6 +10,7 @@ import Whoweare from "../../Components/Whoweare/whoweare";
 import Testimonials from "../../Components/Testimonials/Testimonials";
 import RequestInfo from "../../Components/RequestInfo/RequestInfo";
 import Home from "../../Components/Home/Home";
+
 const LandingPage = () => {
   return (
     <div>
@@ -22,6 +23,7 @@ const LandingPage = () => {
       <UniqueFeatures />
       <Testimonials />
       <RequestInfo />
+
       <Footer />
     </div>
   );
