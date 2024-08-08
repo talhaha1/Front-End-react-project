@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import NavBar from "../../Components/NavBar/nav";
 import Footer from "../../Components/Footer/footer";
 import DigitalMarketing from "../../Components/DigitalMarketing/digitalMarketing";
@@ -8,20 +8,22 @@ import Header from "../../Components/Header/Header";
 import Stats from "../../Components/Stats/Stats";
 import Whoweare from "../../Components/Whoweare/whoweare";
 import Testimonials from "../../Components/Testimonials/Testimonials";
+import RequestInfo from "../../Components/RequestInfo/RequestInfo";
 
 const LandingPage = () => {
   return (
     <div>
-        <NavBar />
+      <NavBar />
       <Stats />
       <Whoweare />
       <OurServices />
-      {/* <Header /> 
-      <UniqueFeatures />*/}
+      <Header />
+      <UniqueFeatures />
       <Testimonials />
-      <Footer />
+      <RequestInfo />
+      {/* <Footer /> */}
     </div>
-  )
-}
+  );
+};
 
-export default LandingPage
+export default LandingPage;

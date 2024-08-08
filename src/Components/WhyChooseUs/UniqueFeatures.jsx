@@ -31,7 +31,7 @@ const UniqueFeatures = () => {
   };
 
   return (
-    <Box>
+    <Box sx={{ position: "relative", width: "100%", height: "100vh" }}>
       <img
         src={image}
         alt="Background"
@@ -43,9 +43,18 @@ const UniqueFeatures = () => {
           position: "absolute",
           top: 0,
           left: 0,
+          zIndex: 1,
         }}
       />
-      <Box>
+      <Box
+        sx={{
+          position: "relative",
+          zIndex: 2,
+          color: "white",
+          padding: "2rem",
+          textAlign: "center",
+        }}
+      >
         <Typography
           sx={{
             fontSize: {
@@ -53,15 +62,13 @@ const UniqueFeatures = () => {
               sm: "2.3rem",
               md: "2.8rem",
               lg: "2.4rem",
-              xl: "7.8rem",
-            }, // Responsive font size
+              xl: "6.1rem",
+            },
             fontWeight: "bold",
-            whiteSpace: "nowrap", // Prevent text from wrapping
-            marginTop: { xs: -5, sm: -5, md: -15, lg: -26, xl: -30 },
-            marginLeft: { xs: 13, sm: 28, md: 30, lg: 55, xl: 180 },
-            color: "white",
-            position: "relative", // Ensure it’s positioned in the normal flow
-            zIndex: 2, // Ensure it’s above the background image
+            whiteSpace: "nowrap",
+            marginTop: { xs: 7 },
+            // marginTop: { xs: -5, sm: -5, md: -15, lg: -26, xl: -30 },
+            // marginLeft: { xs: 13, sm: 28, md: 30, lg: 55, xl: 180 },
             textShadow: "2px 2px 4px rgba(0, 0, 0, 0.7)",
           }}
           variant="h4"
@@ -76,141 +83,46 @@ const UniqueFeatures = () => {
           scrollButtons="auto"
           aria-label="scrollable auto tabs example"
           sx={{
-            maxWidth: { xs: 300, sm: 600, md: 700, lg: 800, xl: 3300 },
-            marginTop: { xs: 2, sm: 2, md: 2, lg: 2, xl: 8 },
-            marginLeft: { xs: 7, sm: 9, md: 12, lg: 25, xl: 130 },
+            maxWidth: { xs: 300, sm: 600, md: 700, lg: 800, xl: 1500 },
+            marginTop: { xs: 6, sm: 5, md: 7, lg: 2, xl: 8 },
+            marginLeft: { xs: 40, sm: 22, md: 12, lg: 25, xl: 20 },
             width: "100%",
             "& .MuiTabs-scrollButtons": {
-              color: "white", // Change color of the scroll buttons
+              color: "white",
             },
           }}
         >
-          <Tab
-            label="Perfection Anytime"
-            sx={{
-              fontSize: {
-                xs: "0.9rem",
-                sm: "1rem",
-                md: "1.1rem",
-                lg: "1rem",
-                xl: "2.7rem",
-              },
-              color: "white", // Set the text color to white
-              "&.Mui-selected": {
-                color: "white", // Ensure the selected tab color is white
-              },
-              outline: "none",
-              "&:focus": {
+          {[
+            "Perfection Anytime",
+            "24/7 Communication",
+            "Our Team",
+            "Fine Automation",
+            "Advance Technology",
+            "Licensed Staff",
+          ].map((label, index) => (
+            <Tab
+              key={index}
+              label={label}
+              sx={{
+                fontSize: {
+                  xs: "0.9rem",
+                  sm: "1rem",
+                  md: "1.1rem",
+                  lg: "1rem",
+                  xl: "2rem",
+                },
+                color: "white",
+                "&.Mui-selected": {
+                  color: "white",
+                },
                 outline: "none",
-              },
-              textShadow: "2px 2px 4px rgba(0, 0, 0, 0.7)",
-            }}
-          />
-          <Tab
-            label="24/7 Communication"
-            sx={{
-              fontSize: {
-                xs: "0.9rem",
-                sm: "1rem",
-                md: "1.1rem",
-                lg: "1rem",
-                xl: "2.7rem",
-              },
-              color: "white", // Set the text color to white
-              "&.Mui-selected": {
-                color: "white", // Ensure the selected tab color is white
-              },
-              outline: "none",
-              "&:focus": {
-                outline: "none",
-              },
-              textShadow: "2px 2px 4px rgba(0, 0, 0, 0.7)",
-            }}
-          />
-          <Tab
-            label="Our Team"
-            sx={{
-              fontSize: {
-                xs: "0.9rem",
-                sm: "1rem",
-                md: "1.1rem",
-                lg: "1rem",
-                xl: "2.7rem",
-              },
-              color: "white", // Set the text color to white
-              "&.Mui-selected": {
-                color: "white", // Ensure the selected tab color is white
-              },
-              outline: "none",
-              "&:focus": {
-                outline: "none",
-              },
-              textShadow: "2px 2px 4px rgba(0, 0, 0, 0.7)",
-            }}
-          />
-          <Tab
-            label="Fine Automation"
-            sx={{
-              fontSize: {
-                xs: "0.9rem",
-                sm: "1rem",
-                md: "1.1rem",
-                lg: "1rem",
-                xl: "2.7rem",
-              },
-              color: "white", // Set the text color to white
-              "&.Mui-selected": {
-                color: "white", // Ensure the selected tab color is white
-              },
-              outline: "none",
-              "&:focus": {
-                outline: "none",
-              },
-              textShadow: "2px 2px 4px rgba(0, 0, 0, 0.7)",
-            }}
-          />
-          <Tab
-            label="Advance Technology"
-            sx={{
-              fontSize: {
-                xs: "0.9rem",
-                sm: "1rem",
-                md: "1.1rem",
-                lg: "1rem",
-                xl: "2.7rem",
-              },
-              color: "white", // Set the text color to white
-              "&.Mui-selected": {
-                color: "white", // Ensure the selected tab color is white
-              },
-              outline: "none",
-              "&:focus": {
-                outline: "none",
-              },
-              textShadow: "2px 2px 4px rgba(0, 0, 0, 0.7)",
-            }}
-          />
-          <Tab
-            label="Licensed Staff"
-            sx={{
-              fontSize: {
-                xs: "0.9rem",
-                sm: "1rem",
-                md: "1.1rem",
-                lg: "1rem",
-                xl: "2.7rem",
-              },
-              color: "white", // Set the text color to white
-              "&.Mui-selected": {
-                color: "white", // Ensure the selected tab color is white
-              },
-              outline: "none",
-              "&:focus": {
-                outline: "none",
-              },
-              textShadow: "2px 2px 4px rgba(0, 0, 0, 0.7)",
-            }}
-          />
+                "&:focus": {
+                  outline: "none",
+                },
+                textShadow: "2px 2px 4px rgba(0, 0, 0, 0.7)",
+              }}
+            />
+          ))}
         </Tabs>
         {renderTextBox()}
       </Box>
