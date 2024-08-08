@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react";
 import NavBar from "../../Components/NavBar/nav";
-import Footer from "../../Components/Footer/Footer";
+//import Footer from "../../Components/Footer/Footer";
 import DigitalMarketing from "../../Components/DigitalMarketing/digitalMarketing";
 import UniqueFeatures from "../../Components/WhyChooseUs/UniqueFeatures";
 import OurServices from "../../Components/OurServices/OurServices";
@@ -12,16 +12,17 @@ import Testimonials from "../../Components/Testimonials/Testimonials";
 const LandingPage = () => {
   return (
     <div>
-        <NavBar />
+      <NavBar />
       <Stats />
       <Whoweare />
       <OurServices />
-      {/* <Header /> 
-      <UniqueFeatures />*/}
+      <Header />
+      <UniqueFeatures />
       <Testimonials />
+
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default LandingPage
+export default LandingPage;
