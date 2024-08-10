@@ -15,7 +15,6 @@ const App = () => {
           <Route path="/services/auto&integ" element={<Services />} />
           <Route path="/services/digmart" element={<Services />} />
           <Route path="/contactus" element={<Services />} />
-          {/* Add other routes here */}
         </Routes>
       </div>
     </Router>
