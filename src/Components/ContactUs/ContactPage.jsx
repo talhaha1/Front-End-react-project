@@ -128,7 +128,7 @@ const ContactPage = () => {
             <IconButton
               href="https://www.facebook.com/analyzinn"
               aria-label="Facebook"
-              sx={{ color: "white" }}
+              sx={{ color: "black" }}
             >
               <FacebookIcon
                 sx={{
@@ -146,7 +146,7 @@ const ContactPage = () => {
               href="https://www.linkedin.com/company/analyzinn/"
               aria-label="LinkedIn"
               sx={{
-                color: "white",
+                color: "black",
               }}
             >
               <LinkedInIcon
@@ -206,7 +206,7 @@ const ContactPage = () => {
                       label="Comment or Message"
                       variant="outlined"
                       multiline
-                      rows={isSmallScreen ? 6 : 10}
+                      rows={isSmallScreen ? 4 : 8}
                       fullWidth
                     />
                     <FormikErrorMessage

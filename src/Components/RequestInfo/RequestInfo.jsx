@@ -2,16 +2,7 @@ import {
   MainBox,
   HeadingTypography,
   ContentContainer,
-  ContentTypography1,
   ContentTypography2,
-  ContentTypography3,
-  IconContainer,
-  FullWidthBox,
-  LocationBox,
-  EmailBox,
-  TypographyLocationAndEmailHeading,
-  ContentTypographyLocation,
-  ContentTypographyEmail,
   FormContainer,
   FormContainer1,
   FormField,
@@ -21,12 +12,6 @@ import {
   ClickHereToScheduleButton,
 } from "./RequestInfoStyle";
 import { useMediaQuery, useTheme } from "@mui/material";
-import { Box } from "@mui/material";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import EmailIcon from "@mui/icons-material/Email";
-import IconButton from "@mui/material/IconButton";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
 import {
   Formik,
   Form,
@@ -113,11 +98,6 @@ const RequestInfo = () => {
           >
             Request Info
           </HeadingTypography>
-
-          {/* <ContentTypography1>
-            Feel free to contact us for any questions or request a Free
-            Consultation
-          </ContentTypography1> */}
           <ContentTypography2>
             When Looking for a company where you can trust your Analytics with,
             You shouldn’t have to pay. That’s why we always offer a free
@@ -190,64 +170,6 @@ const RequestInfo = () => {
           </FormAlignmentContainer>
         </FormContainer>
       </MainBox>
-      {/* <FullWidthBox>
-        <LocationBox>
-          <LocationOnIcon
-            sx={{
-              fontSize: {
-                xs: "1.7rem",
-                sm: "2.1rem",
-                md: "2.1rem",
-                lg: "1.6rem",
-                xl: "3.3rem",
-              },
-              color: "blue",
-              marginRight: {
-                xs: "0.5rem",
-                sm: "0.8rem",
-                md: "0.8rem",
-                lg: "0.5rem",
-                xl: "1.5rem",
-              },
-            }}
-          />
-          <Box>
-            <TypographyLocationAndEmailHeading>
-              HEAD OFFICE
-            </TypographyLocationAndEmailHeading>
-            <ContentTypographyLocation>
-              13th Street, Lubbock, Texas, United States
-            </ContentTypographyLocation>
-          </Box>
-        </LocationBox>
-        <EmailBox>
-          <EmailIcon
-            sx={{
-              fontSize: {
-                xs: "1.7rem",
-                sm: "2.1rem",
-                md: "2.1rem",
-                lg: "1.6rem",
-                xl: "3.3rem",
-              },
-              color: "blue",
-              marginRight: {
-                xs: "0.5rem",
-                sm: "0.8rem",
-                md: "0.8rem",
-                lg: "0.5rem",
-                xl: "1.5rem",
-              },
-            }}
-          />
-          <Box>
-            <TypographyLocationAndEmailHeading>
-              EMAIL
-            </TypographyLocationAndEmailHeading>
-            <ContentTypographyEmail>admin@analyzinn.com</ContentTypographyEmail>
-          </Box>
-        </EmailBox>
-      </FullWidthBox> */}
       <Snackbar
         open={snackbar.open}
         autoHideDuration={6000}
