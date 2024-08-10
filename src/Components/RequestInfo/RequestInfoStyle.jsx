@@ -12,17 +12,19 @@ export const MainBox = styled(Box)(({ theme }) => ({
   overflow: "hidden",
   boxSizing: "border-box",
   [theme.breakpoints.only("xs")]: {
-    minHeight: "102vh",
+    minHeight: "112vh",
+    maxHeight: "112vh",
     flexDirection: "column",
     marginTop: "1.5rem",
   },
   [theme.breakpoints.only("sm")]: {
-    minHeight: "144vh",
+    minHeight: "137vh",
+    maxHeight: "137vh",
     flexDirection: "column",
   },
   [theme.breakpoints.only("md")]: {
-    minHeight: "90vh",
-    maxHeight: "90vh",
+    minHeight: "80vh",
+    maxHeight: "80vh",
   },
 
   [theme.breakpoints.only("lg")]: {
@@ -175,7 +177,7 @@ export const FormContainer = styled(Box)(({ theme }) => ({
     minHeight: "42rem",
     minWidth: "26rem",
     marginLeft: "0rem",
-    marginTop: "3rem",
+    marginTop: "1rem",
   },
   [theme.breakpoints.up("sm")]: {
     padding: "2rem",
@@ -217,7 +219,7 @@ export const FormAlignmentContainer = styled(Box)(({ theme }) => ({
   color: "black",
   [theme.breakpoints.up("xs")]: {
     paddingRight: "29%",
-    marginTop: "-1rem",
+    marginTop: "-3rem",
     minWidth: "50rem",
     maxWidth: "50rem",
     marginRight: "10rem",
