@@ -36,6 +36,8 @@ import * as Yup from "yup";
 import emailjs from "emailjs-com";
 import { Snackbar, Alert } from "@mui/material";
 import { useState } from "react";
+import Navbar from "../NavBar/nav";
+import Footer from "../Footer/footer";
 
 const ContactPage = () => {
   const defaultValuesOfForm = {
@@ -103,6 +105,7 @@ const ContactPage = () => {
 
   return (
     <>
+      <Navbar />
       <MainBox>
         <HeadingTypography
           variant="h3"
@@ -294,6 +297,7 @@ const ContactPage = () => {
           {snackbar.message}
         </Alert>
       </Snackbar>
+      <Footer />
     </>
   );
 };

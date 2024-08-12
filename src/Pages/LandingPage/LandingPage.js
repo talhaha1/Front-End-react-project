@@ -19,7 +19,6 @@ const LandingPage = () => {
       <Stats />
       <Whoweare />
       <OurServices />
-      <Header />
       <WhatSetsUsApart />
       <Testimonials />
       <RequestInfo />
