@@ -38,7 +38,9 @@ import { Snackbar, Alert } from "@mui/material";
 import { useState } from "react";
 import Navbar from "../NavBar/nav";
 import Footer from "../Footer/footer";
+
 import Nav from "../NavBar/nav";
+
 
 const ContactPage = () => {
   const defaultValuesOfForm = {
