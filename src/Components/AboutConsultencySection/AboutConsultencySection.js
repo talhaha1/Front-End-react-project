@@ -50,46 +50,41 @@
 
 // export default ConsultingSection;
 
-import React from "react";
-import { Container, Box, Typography, Divider } from "@mui/material";
-import { consultingSectionStyles as styles } from "./AboutConsultencyScetion.style";
-import Footer from "../Footer/footer";
-import Navbar from "../NavBar/nav";
+import React from 'react';
+import { Container, Box, Typography, Divider } from '@mui/material';
+import { consultingSectionStyles as styles } from './AboutConsultencyScetion.style';
 
 const ConsultingSection = () => {
   return (
-    <>
-      <Navbar />
-      <Box sx={styles.section}>
-        <Container maxWidth={styles.container.maxWidth}>
-          <Box sx={styles.contentBox}>
-            <Typography variant="h3" component="h1" sx={styles.heading}>
-              Consulting Firm Powered by Analytics
+    <Box sx={styles.section}>
+      <Container maxWidth={styles.container.maxWidth}>
+        <Box sx={styles.contentBox}>
+          <Typography
+            variant="h3"
+            component="h1"
+            sx={styles.heading}
+          >
+            Consulting Firm Powered by Analytics
+          </Typography>
+
+          <Box sx={styles.textBox}>
+            <Typography
+              variant="body1"
+              sx={styles.italicText}
+            >
+              We support leaders to EVOLVE their organizations using our proven analytics consulting services.
             </Typography>
 
-            <Box sx={styles.textBox}>
-              <Typography variant="body1" sx={styles.italicText}>
-                We support leaders to EVOLVE their organizations using our
-                proven analytics consulting services.
-              </Typography>
-
-              <Typography variant="body1">
-                We’re a growing group of IT professionals providing businesses
-                worldwide with solutions and services of Data Management,
-                Reporting & Visualization, Digital marketing, Automations &
-                Integrations. ANALYZINN will provide you with a steady stream of
-                actionable insights to fuel intelligent technologies; visibility
-                to boost relevance and revenue. And accelerate innovation!
-              </Typography>
-            </Box>
+            <Typography variant="body1">
+              We’re a growing group of IT professionals providing businesses worldwide with solutions and services of Data Management, Reporting & Visualization, Digital marketing, Automations & Integrations. ANALYZINN will provide you with a steady stream of actionable insights to fuel intelligent technologies; visibility to boost relevance and revenue. And accelerate innovation!
+            </Typography>
           </Box>
+        </Box>
 
-          <Divider sx={styles.divider} />
-        </Container>
-      </Box>
-      <Footer />
-    </>
+        <Divider sx={styles.divider} />
+      </Container>
+    </Box>
   );
-};
+}
 
 export default ConsultingSection;

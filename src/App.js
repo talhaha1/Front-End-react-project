@@ -1,8 +1,8 @@
 import React from "react";
 import LandingPage from "./Pages/LandingPage/LandingPage";
 import Services from "./Pages/Services/Services";
-import ContactPage from "./Components/ContactUs/ContactPage";
-import ConsultingSection from "./Components/AboutConsultencySection/AboutConsultencySection";
+import ContactPage from "./Pages/ContactUs/contactUspage";
+import ConsultingSection from "./Pages/AboutUs/aboutuspage";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 const App = () => {

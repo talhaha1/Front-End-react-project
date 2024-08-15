@@ -1,102 +1,83 @@
 import React from 'react';
+import { Grid, Box, Typography } from '@mui/material';
 import img from "../../assets/AbourWhyChooseUs/image.png";
-import Nav from "../NavBar/nav"
-// import Footer from "../Footer/Footer"
+import Nav from "../NavBar/nav";
+// import Footer from "../Footer/Footer";
 
 const WhyChooseUs = () => {
-    const containerStyle = {
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        padding: '20px',
-        fontFamily: 'Arial, sans-serif',
-    };
-
-    const contentStyle = {
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'center',
-        alignItems: 'flex-start',
-        width: '100%',
-        maxWidth: '1200px',
-        marginBottom: '20px',
-    };
-
-    const imageStyle = {
-        width: '40%',
-    };
-
-    const textContainerStyle = {
-        width: '60%',
-        marginLeft: '40px', // Increased space between image and text
-    };
-
-    const headerStyle = {
-        fontSize: '24px',
-        fontWeight: 'bold',
-        marginBottom: '10px',
-    };
-
-    const paragraphStyle = {
-        fontSize: '16px',
-        lineHeight: '1.5',
-        marginBottom: '20px',
-    };
-
-    const listContainerStyle = {
-        display: 'flex',
-        flexDirection: 'row',
-        flexWrap: 'wrap',
-        justifyContent: 'space-between',
-        width: '100%',
-        maxWidth: '1200px',
-        marginTop: '20px',
-    };
-
-    const listItemStyle = {
-        fontSize: '16px',
-        width: '30%',
-        textAlign: 'left',
-        marginBottom: '20px',
-    };
-
-    const lastItemStyle = {
-        ...listItemStyle,
-        width: '100%',
-        marginLeft: '30%',
-    };
-
-    return (<div>
+    return (
         <div>
             <Nav />
-        </div>
-        <div style={containerStyle}>
-            <div style={contentStyle}>
-                <div style={imageStyle}>
-                    <img 
-                        src={img}
-                        alt="Business Meeting"
-                        style={{ width: '100%' }}
-                    />
-                </div>
-                <div style={textContainerStyle}>
-                    <div style={headerStyle}>Why Choose Us?</div>
-                    <p style={paragraphStyle}>
-                        We partner with our clients, take full ownership of their business needs and devise
-                        tailored solutions for their unique requirements. Our solutions are result-oriented,
-                        technology driven, with end-to-end implementations including Digital Marketing, BI
-                        frameworks, and strategic consultancy.
-                    </p>
-                </div>
-            </div>
-            <div style={listContainerStyle}>
-                <div style={listItemStyle}>▸ Business Intelligence</div>
-                <div style={listItemStyle}>▸ Digital Marketing</div>
-                <div style={listItemStyle}>▸ Data Analytics & Visualization</div>
-                <div style={listItemStyle}>▸ Automation and Integrations</div>
-                <div style={lastItemStyle}>▸ Data Management & Data Engineering</div>
-            </div>
-        </div>
+            <Box
+                sx={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    padding: { xs: '20px', md: '30px 20px' },
+                    minHeight: 'calc(80vh - 80px)', // Reduced height
+                    boxSizing: 'border-box',
+                    fontFamily: 'Arial, sans-serif',
+                }}
+            >
+                <Grid
+                    container
+                    spacing={2}
+                    justifyContent="center"
+                    alignItems="center"
+                    sx={{
+                        maxWidth: '1200px',
+                        margin: '0 auto',
+                    }}
+                >
+                    <Grid item xs={12} md={5}>
+                        <img 
+                            src={img}
+                            alt="Business Meeting"
+                            style={{ width: '100%' }}
+                        />
+                    </Grid>
+                    <Grid item xs={12} md={7}>
+                        <Typography variant="h4" sx={{ fontWeight: 'bold', mb: 1 }}>
+                            Why Choose Us?
+                        </Typography>
+                        <Typography variant="body1" sx={{ mb: 2, lineHeight: 1.5 }}>
+                            We partner with our clients, take full ownership of their business needs and devise
+                            tailored solutions for their unique requirements. Our solutions are result-oriented,
+                            technology driven, with end-to-end implementations including Digital Marketing, BI
+                            frameworks, and strategic consultancy.
+                        </Typography>
+                    </Grid>
+                </Grid>
+                <Grid
+                    container
+                    spacing={2}
+                    sx={{
+                        marginTop: '20px',
+                        maxWidth: '1200px',
+                        margin: '20px auto 0',
+                    }}
+                >
+                    <Grid item xs={12} sm={4}>
+                        <Typography variant="body1" sx={{ textAlign: 'left' }}>▸ Business Intelligence</Typography>
+                    </Grid>
+                    <Grid item xs={12} sm={4}>
+                        <Typography variant="body1" sx={{ textAlign: 'left' }}>▸ Digital Marketing</Typography>
+                    </Grid>
+                    <Grid item xs={12} sm={4}>
+                        <Typography variant="body1" sx={{ textAlign: 'left' }}>▸ Data Analytics & Visualization</Typography>
+                    </Grid>
+                    <Grid item xs={12} sm={4}>
+                        <Typography variant="body1" sx={{ textAlign: 'left' }}>▸ Automation and Integrations</Typography>
+                    </Grid>
+                    <Grid item xs={12} sm={4}>
+                        <Typography variant="body1" sx={{ textAlign: 'left' }}>▸ Data Management & Data Engineering</Typography>
+                    </Grid>
+                    <Grid item xs={12} sm={4}>
+                        <Typography variant="body1" sx={{ textAlign: 'left' }}>▸ Business Information Systems</Typography>
+                    </Grid>
+                </Grid>
+            </Box>
         </div>
     );
 };
