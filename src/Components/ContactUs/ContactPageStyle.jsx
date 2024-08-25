@@ -1,7 +1,9 @@
 import { Box, Typography, TextField, Button } from "@mui/material";
 import { styled } from "@mui/material/styles";
 export const MainBox = styled(Box)(({ theme }) => ({
-  backgroundColor: "black",
+  //backgroundColor: "#d3d3d3",
+  //backgroundColor: "#cccccc",
+  backgroundColor: "#bfbfbf",
   minHeight: "100vh",
   minWidth: "100vw",
   padding: 0, // Ensure no padding
@@ -12,33 +14,41 @@ export const MainBox = styled(Box)(({ theme }) => ({
   overflow: "hidden",
   boxSizing: "border-box",
   [theme.breakpoints.only("xs")]: {
-    minHeight: "102vh",
+    minHeight: "140vh",
+    maxHeight: "140vh",
     flexDirection: "column",
   },
   [theme.breakpoints.only("sm")]: {
     minHeight: "144vh",
+    maxHeight: "144vh",
     flexDirection: "column",
   },
   [theme.breakpoints.only("md")]: {
-    minHeight: "100vh",
+    minHeight: "98vh",
+    maxHeight: "98vh",
+  },
+  [theme.breakpoints.only("lg")]: {
+    minHeight: "111vh",
+    maxHeight: "111vh",
   },
 }));
 
 export const HeadingTypography = styled(Typography)(({ theme }) => ({
   textAlign: "left",
   marginBottom: "2rem",
-  paddingTop: "2rem",
+  paddingTop: "3rem",
 
-  color: "white",
+  color: "black",
   fontWeight: "bold",
   fontFamily: "Helvetica, sans-serif",
   fontSize: "2.9rem", // Default for extra small devices
   marginLeft: "2rem",
-  marginTop: "2.4rem",
+  marginTop: "4.7rem",
+
   [theme.breakpoints.up("sm")]: {
     fontSize: "4rem", // small devices
     marginLeft: "5rem",
-    marginTop: "2rem",
+    marginTop: "4rem",
   },
   [theme.breakpoints.up("md")]: {
     fontSize: "5.1rem", // medium devices
@@ -46,8 +56,8 @@ export const HeadingTypography = styled(Typography)(({ theme }) => ({
   },
   [theme.breakpoints.up("lg")]: {
     fontSize: "4.5rem", // large devices
-    marginLeft: "2rem",
-    marginTop: "1.8rem",
+    marginLeft: "4rem",
+    marginTop: "1.9rem",
   },
   [theme.breakpoints.up("xl")]: {
     fontSize: "8rem", // extra large devices
@@ -93,12 +103,12 @@ export const ContentContainer = styled(Box)(({ theme }) => ({
     minWidth: "44rem",
   },
   [theme.breakpoints.up("md")]: {
-    marginTop: "11rem",
-    marginLeft: "-19rem",
+    marginTop: "16rem",
+    marginLeft: "-20.5rem",
     minHeight: "61rem",
-    maxWidth: "10rem", // Ensure this is the desired width
+    maxWidth: "30rem", // Ensure this is the desired width
     padding: "1rem",
-    minWidth: "25rem",
+    minWidth: "30rem",
   },
   [theme.breakpoints.up("lg")]: {
     // padding: "10rem",
@@ -119,12 +129,17 @@ export const ContentContainer = styled(Box)(({ theme }) => ({
 }));
 
 export const ContentTypography1 = styled(Typography)(({ theme }) => ({
-  color: "white",
+  color: "black",
   fontFamily: "Helvetica, sans-serif",
   marginBottom: "1rem",
   fontWeight: "bold",
   fontSize: "2.1rem",
   lineHeight: 1.3,
+  [theme.breakpoints.up("xs")]: {
+    fontSize: "2.1rem",
+    lineHeight: 1.3,
+    marginTop: "-1rem",
+  },
   [theme.breakpoints.up("sm")]: {
     fontSize: "2.6rem",
     lineHeight: 1.4,
@@ -136,6 +151,7 @@ export const ContentTypography1 = styled(Typography)(({ theme }) => ({
   [theme.breakpoints.up("lg")]: {
     fontSize: "2.1rem",
     lineHeight: 1.2,
+    marginTop: "1.5rem",
   },
   [theme.breakpoints.up("xl")]: {
     fontSize: "3.9rem",
@@ -144,12 +160,12 @@ export const ContentTypography1 = styled(Typography)(({ theme }) => ({
 }));
 
 export const ContentTypography2 = styled(Typography)(({ theme }) => ({
-  color: "white",
+  color: "black",
   fontFamily: "Helvetica, sans-serif",
   marginBottom: "1rem",
   fontSize: "1.4rem",
   lineHeight: 1.5,
-  paddingTop: "1rem",
+  paddingTop: "0rem",
   [theme.breakpoints.up("sm")]: {
     fontSize: "1.9rem",
     lineHeight: 1.9,
@@ -158,11 +174,12 @@ export const ContentTypography2 = styled(Typography)(({ theme }) => ({
   [theme.breakpoints.up("md")]: {
     fontSize: "1.8rem",
     lineHeight: 1.7,
-    paddingTop: "1rem",
+    paddingTop: "2rem",
   },
   [theme.breakpoints.up("lg")]: {
     fontSize: "1.2rem",
     lineHeight: 1.5,
+    marginTop: "-2rem",
   },
   [theme.breakpoints.up("xl")]: {
     fontSize: "2.4rem",
@@ -172,7 +189,7 @@ export const ContentTypography2 = styled(Typography)(({ theme }) => ({
 }));
 
 export const ContentTypography3 = styled(Typography)(({ theme }) => ({
-  color: "white",
+  color: "black",
   fontFamily: "Helvetica, sans-serif",
   fontWeight: "bold",
   marginBottom: "1rem",
@@ -189,7 +206,7 @@ export const ContentTypography3 = styled(Typography)(({ theme }) => ({
   },
   [theme.breakpoints.up("lg")]: {
     fontSize: "1.1rem",
-    paddingTop: "2.2rem",
+    paddingTop: "0rem",
   },
   [theme.breakpoints.up("xl")]: {
     fontSize: "2.0rem",
@@ -215,7 +232,7 @@ export const IconContainer = styled(Box)(({ theme }) => ({
     marginLeft: "2.7rem",
   },
   [theme.breakpoints.up("lg")]: {
-    marginTop: "-1rem",
+    marginTop: "-1.5rem",
     marginLeft: "0.7rem",
   },
   [theme.breakpoints.up("xl")]: {
@@ -233,25 +250,25 @@ export const FullWidthBox = styled(Box)(({ theme }) => ({
   alignItems: "center",
   padding: "1rem",
   [theme.breakpoints.only("xs")]: {
-    height: "22vh", // Adjust height for extra small screens
+    height: "26vh", // Adjust height for extra small screens
     flexDirection: "column",
   },
   [theme.breakpoints.up("sm")]: {
     flexDirection: "column",
-    height: "26vh", // Adjust height for small screens
+    height: "27vh", // Adjust height for small screens
   },
   [theme.breakpoints.up("md")]: {
     flexDirection: "row",
-    height: "29vh", // Adjust height for medium screens
+    height: "17vh", // Adjust height for medium screens
   },
   [theme.breakpoints.up("lg")]: {
     flexDirection: "row",
-    height: "15vh", // Adjust height for large screens
+    height: "23vh", // Adjust height for large screens
     width: "70vw",
   },
   [theme.breakpoints.up("xl")]: {
     flexDirection: "row",
-    height: "22vh", // Adjust height for extra-large screens
+    height: "25vh", // Adjust height for extra-large screens
   },
 }));
 
@@ -286,7 +303,7 @@ export const LocationBox = styled(Box)(({ theme }) => ({
     maxHeight: "9vh",
     minWidth: "47vw",
     maxWidth: "47vw",
-    marginBottom: "15rem",
+    marginBottom: "2rem",
     marginRight: "1.5rem",
   },
   [theme.breakpoints.only("lg")]: {
@@ -337,7 +354,7 @@ export const EmailBox = styled(Box)(({ theme }) => ({
     maxHeight: "9vh",
     minWidth: "47vw",
     maxWidth: "47vw",
-    marginBottom: "15rem",
+    marginBottom: "2rem",
     marginRight: "1.5rem",
   },
   [theme.breakpoints.only("lg")]: {
@@ -459,16 +476,16 @@ export const FormContainer = styled(Box)(({ theme }) => ({
     minWidth: "45rem",
   },
   [theme.breakpoints.up("md")]: {
-    marginTop: "11rem",
-    marginLeft: "0rem",
+    marginTop: "20rem",
+    marginLeft: "-0.5rem",
     minHeight: "77rem",
     maxWidth: "28rem", // Ensure this is the desired width
     padding: "1rem",
     minWidth: "28rem",
   },
   [theme.breakpoints.up("lg")]: {
-    marginTop: "9rem",
-    marginLeft: "0.1rem",
+    marginTop: "11rem",
+    marginLeft: "1.2rem",
     minHeight: "30rem",
     maxHeight: "30rem",
     maxWidth: "45rem",
@@ -553,8 +570,9 @@ export const ErrorMessage = styled(Typography)(({ theme }) => ({
 }));
 
 export const SubmitButton = styled(Button)(({ theme }) => ({
-  backgroundColor: "black",
-  color: "#007bff",
+  backgroundColor: "transparent",
+  //color: "#007bff",
+  color: "#00008B",
   padding: theme.spacing(1, 4),
   borderRadius: "5px",
 
@@ -565,15 +583,16 @@ export const SubmitButton = styled(Button)(({ theme }) => ({
     marginRight: "3rem",
   },
   [theme.breakpoints.up("md")]: {
-    minWidth: "27rem",
+    minWidth: "26rem",
     border: `1px solid #007bff`,
     fontSize: "1rem",
     marginRight: "3rem",
   },
   [theme.breakpoints.up("lg")]: {
     minWidth: "31rem",
-    border: `1px solid #007bff`,
-    fontSize: "1rem",
+    //    border: `1px solid #007bff`,
+    border: `1.5px solid black`,
+    fontSize: "1.1rem",
     marginRight: "3rem",
   },
   [theme.breakpoints.up("xl")]: {
@@ -582,27 +601,29 @@ export const SubmitButton = styled(Button)(({ theme }) => ({
     fontSize: "2rem",
   },
   "&:hover": {
-    backgroundColor: "#0056b3",
+    backgroundColor: "grey",
   },
 }));
 
 export const FormField = styled(TextField)(({ theme }) => ({
   marginBottom: theme.spacing(2),
   borderRadius: "5px",
-  backgroundColor: "white", // Set background to white for the input
+  backgroundColor: "transparent", // Set background to white for the input
+  border: `1.5px solid black`,
   "& .MuiOutlinedInput-root": {
     "& fieldset": {
-      borderColor: "white",
+      borderColor: "transparent",
     },
     "&:hover fieldset": {
-      borderColor: "white",
+      borderColor: "transparent",
     },
     "&.Mui-focused fieldset": {
-      borderColor: "white",
+      borderColor: "transparent",
     },
   },
   "& .MuiInputLabel-root": {
-    color: "#007bff",
+    // color: "#007bff",
+    color: "#00008B",
     backgroundColor: "transparent", // Ensure label background is transparent
     padding: theme.spacing(0, 1), // Add padding for better readability
     transform: "translate(14px, 12px) scale(1)", // Adjust position when not focused
@@ -626,12 +647,13 @@ export const FormField = styled(TextField)(({ theme }) => ({
   },
   [theme.breakpoints.up("md")]: {
     minHeight: "4rem",
-    minWidth: "27rem",
+    minWidth: "26rem",
+    maxWidth: "26rem",
     marginRight: "30rem",
   },
   [theme.breakpoints.up("lg")]: {
     minHeight: "4rem",
-    minWidth: "27rem",
+    minWidth: "31rem",
     marginRight: "30rem",
   },
   [theme.breakpoints.up("xl")]: {

@@ -36,6 +36,11 @@ import * as Yup from "yup";
 import emailjs from "emailjs-com";
 import { Snackbar, Alert } from "@mui/material";
 import { useState } from "react";
+import Navbar from "../NavBar/nav";
+import Footer from "../Footer/footer";
+
+import Nav from "../NavBar/nav";
+
 
 const ContactPage = () => {
   const defaultValuesOfForm = {
@@ -103,6 +108,7 @@ const ContactPage = () => {
 
   return (
     <>
+      <Navbar />
       <MainBox>
         <HeadingTypography
           variant="h3"
@@ -128,7 +134,7 @@ const ContactPage = () => {
             <IconButton
               href="https://www.facebook.com/analyzinn"
               aria-label="Facebook"
-              sx={{ color: "white" }}
+              sx={{ color: "black" }}
             >
               <FacebookIcon
                 sx={{
@@ -146,7 +152,7 @@ const ContactPage = () => {
               href="https://www.linkedin.com/company/analyzinn/"
               aria-label="LinkedIn"
               sx={{
-                color: "white",
+                color: "black",
               }}
             >
               <LinkedInIcon
@@ -206,7 +212,7 @@ const ContactPage = () => {
                       label="Comment or Message"
                       variant="outlined"
                       multiline
-                      rows={isSmallScreen ? 6 : 10}
+                      rows={isSmallScreen ? 4 : 8}
                       fullWidth
                     />
                     <FormikErrorMessage
@@ -294,6 +300,7 @@ const ContactPage = () => {
           {snackbar.message}
         </Alert>
       </Snackbar>
+      <Footer />
     </>
   );
 };
