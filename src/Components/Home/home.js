@@ -1,9 +1,16 @@
-import React from 'react';
-import './home.css';
-import Background from '../../assests/BackgroundHome.jpeg';
+import React, { useState, useEffect } from 'react';
+import './Home.css';
+import Background from '../../assets/BackgroundHome.jpeg';
+
 const Home = () => {
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => setLoaded(true), 300); // Delay to ensure content is ready
+  }, []);
+
   return (
-    <div className="home-container">
+    <div className={`home-container ${loaded ? 'loaded' : ''}`}>
       <img src={Background} alt="Background" className="background-image" />
       <div className="overlay">
         <h1>Grow Your Business with Data-driven Decision-Making!</h1>
