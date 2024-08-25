@@ -20,6 +20,10 @@
     .text-on-image .body-text {
         font-size: 0.9rem;
     }
+    .consultation-button {
+        padding: 8px 16px;
+        font-size: 12px;
+      }
 }
 
 @media (min-width: 900px) {
@@ -32,6 +36,11 @@
     .text-on-image .body-text {
         font-size: 1rem;
     }
+
+    .consultation-button {
+        padding: 10px 20px;
+        font-size: 14px;
+      }
 }
 
 @media (min-width: 1200px) {

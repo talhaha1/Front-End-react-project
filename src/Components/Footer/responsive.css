@@ -2,10 +2,6 @@
     margin-top: 2rem;
   }
   
-  .icon-button {
-    color: white;
-  }
-  
   @media (max-width: 600px) {
     .icon-box {
       display: flex;
