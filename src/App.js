@@ -1,18 +1,28 @@
-import NavBar from './Components/NavBar/nav'
-import Footer from './Components/Footer/footer'
-import Services from './Components/Services/services'
-import DigitalMarketing from './Components/DigitalMarketing/digitalMarketing';
-import Home from './Components/Home/home';
-function App() {
+import React from "react";
+import LandingPage from "./Pages/LandingPage/LandingPage";
+import Services from "./Pages/Services/Services";
+import ContactPage from "./Components/ContactUs/ContactPage";
+
+import ConsultingSection from "./Components/AboutConsultencySection/AboutConsultencySection";
+
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+const App = () => {
   return (
-    <div className="App">
-      <NavBar/>
-      <Home />
-      <Services/>
-      <DigitalMarketing/>
-      <Footer/>
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/contact" element={<ContactPage />} />
+
+          <Route path="/about" element={<ConsultingSection />} />
+
+          {/* Add other routes here */}
+        </Routes>
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;
