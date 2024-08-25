@@ -9,7 +9,8 @@ import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import { CSSTransition } from 'react-transition-group';
 import './BA.css'; // Import CSS file for animations
-
+import Footer from '../Footer/footer';
+import Nav from '../NavBar/nav';
 const theme = createTheme({
   palette: {
     mode: 'dark',
@@ -54,6 +55,9 @@ const BA = () => {
   };
 
   return (
+    <div>
+      <Nav />
+      
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Box sx={{
@@ -137,6 +141,8 @@ const BA = () => {
         </Grid>
       </Container>
     </ThemeProvider>
+    <Footer />
+    </div>
   );
 }
 

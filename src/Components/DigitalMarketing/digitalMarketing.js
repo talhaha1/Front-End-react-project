@@ -7,7 +7,8 @@ import seo from '../../assets/seo.jpg';
 import Email from '../../assets/Email-Marketing.jpg';
 import web from '../../assets/webDesign.png';
 import content from '../../assets/contentWriting.jpg';
-
+import Nav from '../NavBar/nav';
+import Footer from '../Footer/footer';
 const DigitalMarketing = () => {
   const settings = {
     dots: true,
@@ -42,6 +43,9 @@ const DigitalMarketing = () => {
   };
 
   return (
+    <div>
+      <Nav />
+      
     <div className="digital-marketing-container">
       <div className="services-section">
         <h1 className="services-title">Services</h1>
@@ -102,6 +106,9 @@ const DigitalMarketing = () => {
           <li>Campaign Level Dashboards</li>
         </ul>
       </div>
+    </div>
+    <Footer />
+      
     </div>
   );
 };

@@ -8,7 +8,7 @@ import Stats from "../../Components/Stats/Stats";
 import Whoweare from "../../Components/Whoweare/whoweare";
 import Testimonials from "../../Components/Testimonials/Testimonials";
 import RequestInfo from "../../Components/RequestInfo/RequestInfo";
-import Home from "../../Components/Home/Home";
+import Home from "../../Components/Home/Home.js";
 import WhatSetsUsApart from "../../Components/WhyChooseUs/WhatSetsUsApart";
 
 const LandingPage = () => {
